@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"/>
+<title> Diagnóstico das Agroindústrias Rurais Sudoeste/PR </title>
+<link rel="stylesheet" type="text/css" href="_estilo/estilofinal.css"/>
+<script language="javascript" src="_javascript/storage.js"></script>
+</head>
+
+<body>
+<div id="geral">
+<nav id="menu">
+<div id="interface">
+<header id="cabecalho">
+<div id="imagens">
+<figure class="foto-legenda">
+<img id="utfpr" src="imagens/image_preview.png"/>
+<img id="embrapa" src="imagens/Embrapa_-_Marca.png"/>
+<figcaption>
+<p>colaboradores</p>
+</figcaption>
+</figure>
+<section id="corpo">
+</div>
+ <h1>  Diagnóstico das Agroindústrias Rurais Sudoeste/PR</h1>
+</div>
+<div id="corpo">
+</header>
+<h2>DADOS - AGROINDUSTRIA</h2>
+
+<div id="perguntas">
+<form>
+<br>
+<br><legend> LOCALIZAÇÃO</legend>
+<br>
+<INPUT TYPE="RADIO" NAME="localizacao" onclick="local(1)" id="iareaurbana" VALUE="área urbana"><label for="iareaurbana"> ÁREA URBANA</label>
+<p>
+<INPUT TYPE="RADIO" NAME="localizacao" onclick="local(2)" id="iarearural" VALUE="área rural"><label for="iarearural"> ÁREA RURAL</label>
+<br>
+<p>
+<br>
+<br><legend> MULTIFUNCIONAL</legend>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="MULTIFUNCIONAL"  onclick="multifuncional(1)" id="imsim" VALUE="sim"> <label for="imsim"> SIM </label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="MULTIFUNCIONAL"  onclick="multifuncional(2)" id="imnao" VALUE="não"> <label for="imnao"> NÃO </label>
+<br>
+<p>
+<br>
+<br><legend>CATEGORIAS</legend>
+<p id="espaçamento">
+<INPUT TYPE="checkbox" NAME="CATEGORIAS" onclick="categorias(1)" id="ider_carne" VALUE="DERIVADOS DE CARNE"><label for="ider_carne"> DERIVADOS DE CARNE</label>
+<p id="espaçamento">
+<INPUT TYPE="checkbox" NAME="CATEGORIAS" onclick="categorias(2)" id="ider_leite" VALUE="DERIVADOS DE LEITE"><label for="ider_leite"> DERIVADOS DE LEITE</label>
+<p id="espaçamento">
+<INPUT TYPE="checkbox" NAME="CATEGORIAS" onclick="categorias(3)" id="ider_vegetal" VALUE="DERIVADOS DE VEGETAIS"><label for="ider_vegetal"> DERIVADOS DE VEGETAIS</label>
+<p id="espaçamento">
+<INPUT TYPE="checkbox" NAME="CATEGORIAS" onclick="categorias(4)" id="ihort_frute" VALUE="HORTI-FRUTI"><label for="ihort_frute"> HORTI-FRUTI</label>
+<p id="espaçamento">
+<INPUT TYPE="checkbox" NAME="CATEGORIAS" onclick="categorias(5)" id="icat_nenhuma" VALUE="NENHUM DOS PRODUTOS LISTADOS"><label for="icat_nenhuma"> NENHUM DOS PRODUTOS LISTADOS</label>
+<br>
+<p>
+<br>
+<br><legend> MATÉRIA PRIMA</legend>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="MATERIA_PRIMA" onclick="materiaprima(1)" id="ipropria" VALUE="PROPRIA"><label for="ipropria"> PROPRIA</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="MATERIA_PRIMA" onclick="materiaprima(2)" id="iterceiros" VALUE="TERCEIROS"><label for="iterceiros"> TERCEIROS</label>
+<br>
+<p>
+<br>
+<br><legend><label for="iresponsavel_tecnico">NOME DO RESPONSAVEL TECNICO</label></legend><input type="text" name="RESPONSAVEL TECNICO" id="iresponsavel_tecnico" size "100" placeholder="Sua Resposta"/>
+<Br>
+<p>
+<br>
+<br><legend><label for="iformacao">FORMAÇÃO</label></legend><input type="text" name="formacao" id="iformacao" size "100" placeholder="Sua Resposta"/>
+</form>
+<p>
+</div>
+
+</div>
+<a href="pagina3.html">proximo</a>
+ <button id="btnAdicionar" onclick="adicionaragroindustrias()">Adicionar item</button>
+     <button id="btnLimpar" onclick="limpar()">Remover todos</button>
+</section>
+</div>
+</body>
+</html>

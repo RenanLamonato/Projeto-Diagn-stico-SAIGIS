@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"/>
+<title> Diagnóstico das Agroindústrias Rurais Sudoeste/PR </title>
+<link rel="stylesheet" type="text/css" href="_estilo/estilofinal.css"/>
+<script language="javascript" src="_javascript/storage.js"></script>
+</head>
+
+<body id="producao_produtos">
+<div id="geral">
+<nav id="menu">
+<div id="interface">
+<header id="cabecalho">
+<div id="imagens">
+<figure class="foto-legenda">
+<img id="utfpr" src="imagens/image_preview.png"/>
+<img id="embrapa" src="imagens/Embrapa_-_Marca.png"/>
+<figcaption>
+<p>colaboradores</p>
+</figcaption>
+</figure>
+<section id="corpo">
+</div>
+ <h1>  Diagnóstico das Agroindústrias Rurais Sudoeste/PR</h1>
+</div>
+<div id="corpo">
+</header>
+<h2>DADOS - PRODUÇÃO(PRODUTOS)</h2>
+
+<div id="perguntas">
+<table>
+<br>
+<br><legend><label for="iqual_produto">QUAL É O PRODUTO?</legend><input type="text" class="texto-pg-3" name="QUAL É O PRODUTO" id="iqual_produto" size "100" placeholder="Sua Resposta" />
+<br>
+<p>
+<br>
+<br><legend><label for="iquantidade_mes">QUANTIDADE PRODUZIDA POR MÊS:</legend><input type="text" class="texto-pg-3" name="QUANTIDADE PRODUZIDA POR MÊS" id="iquantidade_mes" size "100" placeholder="sua resposta" />
+<br>
+<p>
+<br>
+<br><legend><label for="iunidade">UNIDADE:</legend><input type="text" class="texto-pg-3" name="QUNIDADE" id="iunidade" size "100" placeholder="kg/litros/caixas/vidros/etc" />
+<br>
+<p>
+<br>
+<br><legend> Mais algum Produto?</legend> <form>
+<br>
+<INPUT TYPE="RADIO" NAME="maisproduto" id="imaisprodutos" onclick="maisalgumproduto(1)" VALUE="op1"><label for="imaisprodutos"> Sim</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="maisproduto" id="imaisproduton" onclick="maisalgumproduto(2)" VALUE="op2"><label for="imaisproduton"> Não, não há outro produto</label>
+</form>
+
+
+</table>
+</div>
+
+<p>
+</div>
+<a href="mercado.html">proximo</a>
+ <button id="btnAdicionar" onclick="adicionarproducao()">Adicionar item</button>
+     <button id="btnLimpar" onclick="limpar()">Remover todos</button>
+</section>
+</div>
+</body>
+</html>
