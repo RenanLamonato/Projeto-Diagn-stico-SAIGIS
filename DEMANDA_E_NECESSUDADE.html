@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"/>
+<title> Diagnóstico das Agroindústrias Rurais Sudoeste/PR </title>
+<link rel="stylesheet" type="text/css" href="_estilo/estilofinal.css"/>
+<script language="javascript" src="_javascript/storage.js"></script>
+</head>
+
+<body>
+<div id="geral">
+<nav id="menu">
+<div id="interface">
+<header id="cabecalho">
+<div id="imagens">
+<figure class="foto-legenda">
+<img id="utfpr" src="imagens/image_preview.png"/>
+<img id="embrapa" src="imagens/Embrapa_-_Marca.png"/>
+<figcaption>
+<p>colaboradores</p>
+</figcaption>
+</figure>
+<section id="corpo">
+
+</div>
+ <h1>  Diagnóstico das Agroindústrias Rurais Sudoeste/PR</h1>
+</div>
+<div id="corpo">
+</header>
+<h2>DADOS - DEMANDAS E NECESSIDADES</h2>
+
+<div id="perguntas">
+<p id="espaçamento">
+<legend><label for="i_d_n_cap_tec">CAPTAÇÃO, TECNOLOGIA. QUAL?</label></legend>
+<br><input type="text"  name="captação_tecnologia" id="i_d_n_cap_tec" size "100" placeholder="SUA RESPOSTA" />
+<br>
+ organização/associação
+<br> 
+<INPUT TYPE="RADIO" NAME="orcap" id="i_orcap__s" onclick="org_asso_cap_tec(1)" VALUE="sim"><label for="i_orcap__s"> sim</label>
+<INPUT TYPE="RADIO" NAME="orcap" id="i_orcap_n" onclick="org_asso_cap_tec(2)" VALUE="nao"><label for="i_orcap_n"> não</label>
+<br>
+<p>
+<br>
+<legend>ASSISTÊNCIA TÉCNICA. QUAL?</legend>
+<br><input type="text" name="assistencia_tecnica" id="i_assis_tec" size "100" placeholder="SUA RESPOSTA" />
+<br>
+ organização/associação
+<br> 
+<INPUT TYPE="RADIO" NAME="orassi" id="i_orassi_s" onclick="org_asso_assis_tec(1)" VALUE="sim"><label for="i_orassi_s"> sim</label>
+<INPUT TYPE="RADIO" NAME="orassi" id="i_orassi_n" onclick="org_asso_assis_tec(2)" VALUE="nao"><label for="i_orassi_n"> não</label>
+<br>
+<p>
+<br>
+<br> <legend>ROTULAGEM/MARCA</legend>
+ <br>
+<INPUT TYPE="RADIO" NAME="rotulagem_marca" id="i_rot_marc_desenvolvimento" onclick="rotulagem_marca(1)" VALUE="DESENVOLVIMENTO"><label for="i_rot_marc_desenvolvimento">DESENVOLVIMENTO</label>
+<p id="espaçamento">
+<input type="RADIO" NAME="rotulagem_marca" id="i_rot_marc_melhoramento" onclick="rotulagem_marca(2)" value="MELHORAMENTO"><label for="i_rot_marc_melhoramento">MELHORAMENTO</label>
+<p id="espaçamento">
+<input type="radio" name="rotulagem_marca" id="i_rot_marc_valor_nutricional" onclick="rotulagem_marca(3)" value="VALOR_NUTRICIONAL"><label for="i_rot_marc_valor_nutricional">VALOR NUTRICIONAL</label>
+<p id="espaçamento">
+<input type="radio" name="rotulagem_marca" id="i_rot_marc_adequacao" onclick="rotulagem_marca(4)" value="ADEQUAÇÃO"><label for="i_rot_marc_adequacao">ADEQUAÇÃO</label>
+<br>
+<br>
+<p>
+<br>
+<br><legend>CÓDIGO DE BARRAS.NECESSITA</legend>
+<br>
+<input type="radio" name="codigo_de_barras" id="i_cod_barras_s" onclick="cod_barra(1)" value="SIM"><label for="i_cod_barras_s">SIM</label>
+<p id="espaçamento">
+<input type="radio" name="codigo_de_barras" id="i_cod_barras_n" onclick="cod_barra(2)" value="NAO"><label for="i_cod_barras_n">NÃO</label>
+<p id="espaçamento">
+<input type="radio" name="codigo_de_barras" id="i_cod_barras_eam" onclick="cod_barra(3)" value="EAN"><label for="i_cod_barras_eam">EAN</label>
+<br>
+<br>
+<p>
+<br>
+<br><legend>REGISTRO DE MARCAS</legend>
+<br>
+<input type="radio" name="registro_de_marcas" id="i_regis_marca_nao_possui" onclick="reg_de_marca(1)" value="NAO_POSSUI"><label for="i_regis_marca_nao_possui">NÃO POSSUI</label>
+<p id="espaçamento">
+<input type="radio" name="registro_de_marcas" id="i_regis_marca_nao_quer" onclick="reg_de_marca(2)" value="NAO_QUER"><label for="i_regis_marca_nao_quer">NÃO QUER</label>
+<p id="espaçamento">
+<input type="radio" name="registro_de_marcas" id="i_regis_marca_deseja" onclick="reg_de_marca(3)" value="DESEJA"><label for="i_regis_marca_deseja">DESEJA</label>
+<p id="espaçamento">
+<input type="radio" name="registro_de_marcas" id="i_regis_marca_inpi" onclick="reg_de_marca(4)" value="INPI"><label for="i_regis_marca_inpi">INPI</label>
+<br>
+<p>
+<br>
+<br><legend>PROJETO DA UNIDADE AGROINDUSTRIAL</legend>
+<br>
+<input type="radio" name="projeto_da_uni_agro" id="i_proj_uni_agro_adequacao" onclick="proj_da_uni_agro(1)" value="ADEQUAÇÃO"><label for="i_proj_uni_agro_adequacao">ADEQUAÇÃO</label>
+<p id="espaçamento">
+<input type="radio" name="projeto_da_uni_agro" id="i_proj_uni_agro_melhoramento" onclick="proj_da_uni_agro(2)" value="MELHORAMENTO"><label for="i_proj_uni_agro_melhoramento">MELHORAMENTO</label>
+<p id="espaçamento">
+<input type="radio" name="projeto_da_uni_agro" id="i_proj_uni_agro_nova_proposta" onclick="proj_da_uni_agro(3)" value="NOVA_PROPOSTA"><label for="i_proj_uni_agro_nova_proposta">NOVA PROPOSTA</label>
+<p id="espaçamento">
+<input type="radio" name="projeto_da_uni_agro" id="i_proj_uni_agro_planta" onclick="proj_da_uni_agro(4)" value="PLANTA"><label for="i_proj_uni_agro_planta">PLANTA</label>
+<br>
+<p>
+<br> 
+<br><legend>COMERCIALIZAÇÃO</legend>
+<br>
+<input type="radio" name="comercialização" id="i_comer_insercao" onclick="comercializacao(1)" value="INSERÇÃO"><label for="i_comer_insercao">INSERÇÃO</label>
+<p id="espaçamento">
+<input type="radio" name="comercialização" id="i_comer_amp_c_comer" onclick="comercializacao(2)" value="AMPLIACAO_DE_CANAIS_DE_COMERCIALIZACAO"><label for="i_comer_amp_c_comer">AMPLIAÇÃO DE CANAIS DE COMERCIALIZAÇÃO</label>
+<p id="espaçamento">
+<input type="radio" name="comercialização" id="i_comer_venda_conjunta" onclick="comercializacao(3)" value="VENDA_CONJUNTA"><label for="i_comer_venda_conjunta">VENDA CONJUNTA</label>
+<br>
+<p>
+<br>
+<br><legend>CREDITO</legend>
+<br>
+<input type="radio" name="credito" id="i_cred_inverstimento" onclick="credito(1)" value="INVESTIMENTO"><label for="i_cred_inverstimento">INVESTIMENTO</label>
+<p id="espaçamento">
+<input type="radio" name="credito" id="i_cred_capt_giro" onclick="credito(2)" value="CAPITAL_DE_GIRO"><label for="i_cred_capt_giro">CAPITAL DE GIRO</label>
+</div>
+</div>
+<a href="ambiental.html">proximo</a>
+ <button id="btnAdicionar" onclick="demandas_e_necessidades()">Adicionar item</button>
+     <button id="btnLimpar" onclick="limpar()">Remover todos</button>
+</section>
+</div>
+</body>
+</html>
