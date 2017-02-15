@@ -68,24 +68,7 @@ function multifuncional(tipo)
 	localStorage.setItem("MULTIFUNCIONAL",imnao.value);
 	}	
 }
-function categorias(deriva)
-{
-	if(deriva == 1){
-	localStorage.setItem("CATEGORIAS",ider_carne.value);
-	}
-	if(deriva == 2){
-	localStorage.setItem("CATEGORIAS",ider_leite.value);
-	}
-	if(deriva == 3){
-	localStorage.setItem("CATEGORIAS",ider_vegetal.value);
-	}
-	if(deriva == 4){
-	localStorage.setItem("CATEGORIAS",ihort_frute.value);
-	}
-	if(deriva == 5){
-	localStorage.setItem("CATEGORIAS",icat_nenhuma.value);
-	}
-}
+
 function adicionaragroindustrias()
 {
 		
@@ -394,15 +377,6 @@ function registroprodutovegetal(fregvegetal)
 		localStorage.setItem("registro_produto_vegetal", i_reg_o_veg_não.value);
 	}
 }
-function registrodemarca(fregmarca)
-{
-	if(fregmarca == 1){
-		localStorage.setItem("registro_marca", i_reg_marca_ean.value);
-	}
-	if(fregmarca == 2){
-		localStorage.setItem("registro_marca", i_reg_marca_inpi.value);
-	}
-}
 /* fim mercado */
 
 
@@ -547,13 +521,206 @@ function credito(fcredito)
 
 /* fim demandas e necessidades */
 
+/* ambiental*/
+function adicionarambiental(){
+localStorage.setItem("destino_esgoto_sanitario", I_DES.value);
+
+localStorage.setItem("RESIDUOS_SOLIDOS_GERADOS_NA_AGROINDUSTRIA", I_RSGA.value);
+
+localStorage.setItem("DESTINO_RESIDUOS_SOLIDOS", I_QDDRS.value);
+
+localStorage.setItem("RESIDUOS_LIQUIDOS_GERADOS_NA_AGROINDUSTRIA", I_QSRLGA.value);
+
+localStorage.setItem("DESTINO_RESIDUOS_LIQUIDOS", I_QDDRL.value);
+
+localStorage.setItem("UTILIZA_ALGUM_COMBUSTIVEL_PROCESSO_", I_UACPBP.value);
+
+localStorage.setItem("ORIGEM_DESSES_COMBUSTIVEIS", I_OD_COMBUSTIVEL.value);
+
+localStorage.setItem("QUAIS_SAO_ELES", I_QSELES.value);
+}
+function EST_EMPRESA_ENQUADRA_LEGISLAÇÃO_AMB(feeela) {
+	if(feeela==1){
+	localStorage.setItem("SE_ENQUADRA_NA_LEGISLAÇÃO_AMBIENTAL",I_ELA_atende.value);
+	}
+	if(feeela==2){
+	localStorage.setItem("SE_ENQUADRA_NA_LEGISLAÇÃO_AMBIENTAL",I_ELA_ate_parcialmente.value);
+	}
+	if(feeela==3){
+	localStorage.setItem("SE_ENQUADRA_NA_LEGISLAÇÃO_AMBIENTAL",I_ELA_n_atende.value);
+	}
+	if(feeela==4){
+	localStorage.setItem("SE_ENQUADRA_NA_LEGISLAÇÃO_AMBIENTAL",I_ELA_n_sabe.value);
+	}
+}
+function fMATERIA_PRIMA(fmp){
+	if(fmp==1){
+	localStorage.setItem("agua_usada_na_materia_prima",i_MP_0_25.value);
+	}
+		if(fmp==2){
+	localStorage.setItem("agua_usada_na_materia_prima",i_MP_26_50.value);
+	}
+		if(fmp==3){
+	localStorage.setItem("agua_usada_na_materia_prima",i_MP_51_75.value);
+	}
+		if(fmp==4){
+	localStorage.setItem("agua_usada_na_materia_prima",i_MP_76_100.value);
+	}
+}
+function BENEFICIAMENTO_PRODUTOS(fbp){
+	if(fbp==1){
+	localStorage.setItem("agua_usada_no_benificiamento_produtos",i_BP_0_25.value);
+	}
+		if(fbp==2){
+	localStorage.setItem("agua_usada_no_benificiamento_produtos",i_BP_26_50.value);
+	}
+		if(fbp==3){
+	localStorage.setItem("agua_usada_no_benificiamento_produtos",i_BP_51_75.value);
+	}
+		if(fbp==4){
+	localStorage.setItem("agua_usada_no_benificiamento_produtos",i_BP_76_100.value);
+	}
+}
+function LIMPEZA_INSTALACOES(fli){
+	if(fli==1){
+	localStorage.setItem("fracao_da_agua_usada_na_limpeza_instalacoes",i_LI_0_25.value);
+	}
+		if(fli==2){
+	localStorage.setItem("fracao_da_agua_usada_na_limpeza_instalacoes",i_LI_26_50.value);
+	}
+		if(fli==3){
+	localStorage.setItem("fracao_da_agua_usada_na_limpeza_instalacoes",i_LI_51_75.value);
+	}
+		if(fli==4){
+	localStorage.setItem("fracao_da_agua_usada_na_limpeza_instalacoes",i_LI_76_100.value);
+	}
+}
+function REALIZADO_TRAT_AGUA_ANTES_UTIL(frtaau){
+	if(frtaau==1){
+	localStorage.setItem("REALIZADO_TRAT_AGUA_ANTES_UTIL",I_RATAAU_s.value);
+	}
+		if(frtaau==2){
+	localStorage.setItem("REALIZADO_TRAT_AGUA_ANTES_UTIL",I_RATAAU_n.value);
+	}
+}
+function EXISTENCIA_SISTEMA_TRATAMENTO_EFICIENCIA(feste){
+	if(feste==1){
+	localStorage.setItem("EXISTENCIA_SISTEMA_TRATAMENTO_EFICIENCIA",I_ESTQE_25.value);
+	}
+		if(feste==2){
+	localStorage.setItem("EXISTENCIA_SISTEMA_TRATAMENTO_EFICIENCIA",I_ESTQE_50.value);
+	}
+		if(feste==3){
+	localStorage.setItem("EXISTENCIA_SISTEMA_TRATAMENTO_EFICIENCIA",I_ESTQE_75.value);
+	}
+		if(feste==4){
+	localStorage.setItem("EXISTENCIA_SISTEMA_TRATAMENTO_EFICIENCIA",I_ESTQE_100.value);
+	}
+}
+function REALIZA_REAPROVEITAM_PROC_PRODUTIVO(frrpp){
+	if(frrpp==1){
+	localStorage.setItem("REALIZA_REAPROVEITAM_PROC_PRODUTIVO",I_RARPP_s.value);
+	}
+		if(frrpp==2){
+	localStorage.setItem("REALIZA_REAPROVEITAM_PROC_PRODUTIVO",I_RARPP_n.value);
+	}
+	}
+
+/* fim ambiental */
 
 
+/*  checkbox */
+/*1*/
+var fdv, fdv1,fdv2,fdv3,fdv4,fdv5;
+fdv=0;
+fdv1=0;
+fdv2=0;
+fdv3=0;
+fdv4=0;
+fdv5=0;
+function ffdvenda(){
+	fdv = fdv+1;
+	if(fdv%2 == 1){localStorage.setItem("FORMADEVENDA1",c_fv_varejo.value);}
+	if(fdv%2 == 0){localStorage.removeItem("FORMADEVENDA1",c_fv_varejo.value);}
+}
+function ffdvenda1(){
+	fdv1 = fdv1+1;
+	if(fdv1%2 == 1){localStorage.setItem("FORMADEVENDA2",c_fv_atacado.value);}
+	if(fdv1%2 == 0){localStorage.removeItem("FORMADEVENDA2",c_fv_atacado.value);}
+}
+function ffdvenda2(){
+	fdv2 = fdv2+1;
+	if(fdv2%2 == 1){localStorage.setItem("FORMADEVENDA3",c_fv_v_d_consumidor.value);}
+	if(fdv2%2 == 0){localStorage.removeItem("FORMADEVENDA3",c_fv_v_d_consumidor.value);}
+}
+function ffdvenda3(){
+	fdv3 = fdv3+1;
+	if(fdv3%2 == 1){localStorage.setItem("FORMADEVENDA4",c_fv_rep_comercial.value);}
+	if(fdv3%2 == 0){localStorage.removeItem("FORMADEVENDA4",c_fv_rep_comercial.value);}
+}
+function ffdvenda4(){
+	fdv4 = fdv4+1;
+	if(fdv4%2 == 1){localStorage.setItem("FORMADEVENDA5",c_fv_cliente.value);}
+	if(fdv4%2 == 0){localStorage.removeItem("FORMADEVENDA5",c_fv_cliente.value);}
+}
+function ffdvenda5(){
+	fdv5 = fdv5+1;
+	if(fdv5%2 == 1){localStorage.setItem("FORMADEVENDA6",c_fv_institucional.value);}
+	if(fdv5%2 == 0){localStorage.removeItem("FORMADEVENDA6",c_fv_institucional.value);}
+}
+/*1*/
 
 
+/*2*/
+var cat,cat1,cat2,cat3,cat4;
+cat=0
+cat1=0;
+cat2=0;
+cat3=0;
+cat4=0;
+function categoria(){
+	cat = cat+1;
+	if(cat%2 == 1){localStorage.setItem("CATEGORIA1",ider_carne.value);}
+	if(cat%2 == 0){localStorage.removeItem("CATEGORIA1",ider_carne.value);}	
+}
+function categoria1(){
+	cat1 = cat1+1;
+	if(cat1%2 == 1){localStorage.setItem("CATEGORIA2",ider_leite.value);}
+	if(cat1%2 == 0){localStorage.removeItem("CATEGORIA2",ider_leite.value);}	
+}
+function categoria2(){
+	cat2 = cat2+1;
+	if(cat2%2 == 1){localStorage.setItem("CATEGORIA3",ider_vegetal.value);}
+	if(cat2%2 == 0){localStorage.removeItem("CATEGORIA3",ider_vegetal.value);}	
+}
+function categoria3(){
+	cat3 = cat3+1;
+	if(cat3%2 == 1){localStorage.setItem("CATEGORIA4",ihort_frute.value);}
+	if(cat3%2 == 0){localStorage.removeItem("CATEGORIA4",ihort_frute.value);}	
+}
+function categoria4(){
+	cat4 = cat4+1;
+	if(cat4%2 == 1){localStorage.setItem("CATEGORIA5",icat_nenhuma.value);}
+	if(cat4%2 == 0){localStorage.removeItem("CATEGORIA5",icat_nenhuma.value);}	
+}
+/*2*/
 
+/*3*/
+var rm,rm1;
+rm=0;
+rm1=0;
+function regis_marca1(){
+	rm = rm+1;
+	if(rm%2 == 1){localStorage.setItem("registro_de_marca",i_reg_marca_ean.value);}
+	if(rm%2 == 0){localStorage.removeItem("registro_de_marca",i_reg_marca_ean.value);}
+}
+function regis_marca2(){
+	rm1 = rm1+1;
+	if(rm1%2 == 1){localStorage.setItem("registro_de_marca2",i_reg_marca_inpi.value);}
+	if(rm1%2 == 0){localStorage.removeItem("registro_de_marca2",i_reg_marca_inpi.value);}		
+}
 
-
+/*3*/
 /* outros */
 
 
