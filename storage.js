@@ -522,7 +522,8 @@ function credito(fcredito)
 /* fim demandas e necessidades */
 
 /* ambiental*/
-function adicionarambiental(){
+function adicionarambiental()
+{
 localStorage.setItem("destino_esgoto_sanitario", I_DES.value);
 
 localStorage.setItem("RESIDUOS_SOLIDOS_GERADOS_NA_AGROINDUSTRIA", I_RSGA.value);
@@ -539,7 +540,8 @@ localStorage.setItem("ORIGEM_DESSES_COMBUSTIVEIS", I_OD_COMBUSTIVEL.value);
 
 localStorage.setItem("QUAIS_SAO_ELES", I_QSELES.value);
 }
-function EST_EMPRESA_ENQUADRA_LEGISLAÇÃO_AMB(feeela) {
+function EST_EMPRESA_ENQUADRA_LEGISLAÇÃO_AMB(feeela)
+{
 	if(feeela==1){
 	localStorage.setItem("SE_ENQUADRA_NA_LEGISLAÇÃO_AMBIENTAL",I_ELA_atende.value);
 	}
@@ -553,78 +555,84 @@ function EST_EMPRESA_ENQUADRA_LEGISLAÇÃO_AMB(feeela) {
 	localStorage.setItem("SE_ENQUADRA_NA_LEGISLAÇÃO_AMBIENTAL",I_ELA_n_sabe.value);
 	}
 }
-function fMATERIA_PRIMA(fmp){
+function fMATERIA_PRIMA(fmp)
+{
 	if(fmp==1){
 	localStorage.setItem("agua_usada_na_materia_prima",i_MP_0_25.value);
 	}
-		if(fmp==2){
+	if(fmp==2){
 	localStorage.setItem("agua_usada_na_materia_prima",i_MP_26_50.value);
 	}
-		if(fmp==3){
+	if(fmp==3){
 	localStorage.setItem("agua_usada_na_materia_prima",i_MP_51_75.value);
 	}
-		if(fmp==4){
+	if(fmp==4){
 	localStorage.setItem("agua_usada_na_materia_prima",i_MP_76_100.value);
 	}
 }
-function BENEFICIAMENTO_PRODUTOS(fbp){
+function BENEFICIAMENTO_PRODUTOS(fbp)
+{
 	if(fbp==1){
 	localStorage.setItem("agua_usada_no_benificiamento_produtos",i_BP_0_25.value);
 	}
-		if(fbp==2){
+	if(fbp==2){
 	localStorage.setItem("agua_usada_no_benificiamento_produtos",i_BP_26_50.value);
 	}
-		if(fbp==3){
+	if(fbp==3){
 	localStorage.setItem("agua_usada_no_benificiamento_produtos",i_BP_51_75.value);
 	}
-		if(fbp==4){
+	if(fbp==4){
 	localStorage.setItem("agua_usada_no_benificiamento_produtos",i_BP_76_100.value);
 	}
 }
-function LIMPEZA_INSTALACOES(fli){
+function LIMPEZA_INSTALACOES(fli)
+{
 	if(fli==1){
 	localStorage.setItem("fracao_da_agua_usada_na_limpeza_instalacoes",i_LI_0_25.value);
 	}
-		if(fli==2){
+	if(fli==2){
 	localStorage.setItem("fracao_da_agua_usada_na_limpeza_instalacoes",i_LI_26_50.value);
 	}
-		if(fli==3){
+	if(fli==3){
 	localStorage.setItem("fracao_da_agua_usada_na_limpeza_instalacoes",i_LI_51_75.value);
 	}
-		if(fli==4){
+	if(fli==4){
 	localStorage.setItem("fracao_da_agua_usada_na_limpeza_instalacoes",i_LI_76_100.value);
 	}
 }
-function REALIZADO_TRAT_AGUA_ANTES_UTIL(frtaau){
+function REALIZADO_TRAT_AGUA_ANTES_UTIL(frtaau)
+{
 	if(frtaau==1){
 	localStorage.setItem("REALIZADO_TRAT_AGUA_ANTES_UTIL",I_RATAAU_s.value);
 	}
-		if(frtaau==2){
+	if(frtaau==2){
 	localStorage.setItem("REALIZADO_TRAT_AGUA_ANTES_UTIL",I_RATAAU_n.value);
 	}
 }
-function EXISTENCIA_SISTEMA_TRATAMENTO_EFICIENCIA(feste){
+function EXISTENCIA_SISTEMA_TRATAMENTO_EFICIENCIA(feste)
+{
 	if(feste==1){
 	localStorage.setItem("EXISTENCIA_SISTEMA_TRATAMENTO_EFICIENCIA",I_ESTQE_25.value);
 	}
-		if(feste==2){
+	if(feste==2){
 	localStorage.setItem("EXISTENCIA_SISTEMA_TRATAMENTO_EFICIENCIA",I_ESTQE_50.value);
 	}
-		if(feste==3){
+	if(feste==3){
 	localStorage.setItem("EXISTENCIA_SISTEMA_TRATAMENTO_EFICIENCIA",I_ESTQE_75.value);
 	}
-		if(feste==4){
+	if(feste==4){
 	localStorage.setItem("EXISTENCIA_SISTEMA_TRATAMENTO_EFICIENCIA",I_ESTQE_100.value);
 	}
 }
-function REALIZA_REAPROVEITAM_PROC_PRODUTIVO(frrpp){
+function REALIZA_REAPROVEITAM_PROC_PRODUTIVO(frrpp)
+{
 	if(frrpp==1){
 	localStorage.setItem("REALIZA_REAPROVEITAM_PROC_PRODUTIVO",I_RARPP_s.value);
 	}
-		if(frrpp==2){
+	if(frrpp==2){
 	localStorage.setItem("REALIZA_REAPROVEITAM_PROC_PRODUTIVO",I_RARPP_n.value);
 	}
-	}
+}
 
 /* fim ambiental */
 
