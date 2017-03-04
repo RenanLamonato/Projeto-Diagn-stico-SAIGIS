@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"/>
+<title> Diagnóstico das Agroindústrias Rurais Sudoeste/PR </title>
+<link rel="stylesheet" type="text/css" href="_estilo/estilofinal.css"/>
+<script language="javascript" src="_javascript/estorage1.js"></script>
+</head>
+
+<body>
+<div id="geral">
+<nav id="menu">
+<div id="interface">
+<header id="cabecalho">
+<div id="imagens">
+<figure class="foto-legenda">
+<img id="unicafes" src="imagens/logomarca-unicafes.png"/>
+<img id="utfpr" src="imagens/image_preview.png"/>
+<img id="embrapa" src="imagens/Embrapa_-_Marca.png"/>
+<img id="Emater" src="imagens/EMATER.png"/>
+<figcaption>
+<p>colaboradores</p>
+</figcaption>
+</figure>
+<section id="corpo">
+</div>
+ <h1>  Diagnóstico das Agroindústrias Rurais Sudoeste/PR</h1>
+</div>
+<div id="corpo">
+</header>
+<h2>9.Investimento médio</h2>
+<p>
+<legend>9.1.Total investido na agroindustria (R$ ):</legend>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="T_inves_agroindustria" id="i_tiagro_0_10" onclick="f_ti_agro(1)" VALUE="até 10.000"><label for="i_tiagro_0_10"> até 10.000; </label>
+ <p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="T_inves_agroindustria" id="i_tiagro_10_50" onclick="f_ti_agro(2)" VALUE="10.000 a 50.000"><label for="i_tiagro_10_50"> 10.000 a 50.000 </label>
+ <p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="T_inves_agroindustria" id="i_tiagro_50_100" onclick="f_ti_agro(3)" VALUE="50.000 a 100.0000"><label for="i_tiagro_50_100"> 50.000 a 100.0000;</label>
+ <p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="T_inves_agroindustria" id="i_tiagro_100_500" onclick="f_ti_agro(4)" VALUE="100.000 a 500.000"><label for="i_tiagro_100_500"> 100.000 a 500.000/;</label>
+ <p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="T_inves_agroindustria" id="i_tiagro_500_1" onclick="f_ti_agro(5)" VALUE="500.000 a 1 milhão"><label for="i_tiagro_500_1"> 500.000 a 1 milhão </label>
+ <p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="T_inves_agroindustria" id="i_tiagro_mais_1" onclick="f_ti_agro(6)" VALUE="mais que 1 milhão"><label for="i_tiagro_mais_1"> mais que 1 milhão</label>
+<br>
+<p>
+<br>
+<legend>9.2.Recursos</legend>  
+<p id="espaçamento"> 
+ <INPUT TYPE="RADIO" NAME="Recursos" id="i_rec_pro" onclick="f_recurso(1)" VALUE="próprios"><label for="i_rec_pro"> próprios </label>
+  <p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="Recursos" id="i_rec_t_fin" onclick="f_recurso(2)" VALUE="terceiros /financiado"><label for="i_rec_t_fin"> terceiros /financiado </label>
+<br>
+<p>
+<br>
+<legend>9.3.Tipo de Financiamento:  </legend>
+<br><input type="text" name="t_Financiamento" id="i_t_finan" size "100" placeholder="SUA RESPOSTA" />
+<br>
+<p>
+<br>
+<legend>9.4.Pretende investir </legend>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="pret_investir" id="i_p_inv_s" onclick="f_pret_invest(1)" VALUE="sim"><label for="i_p_inv_s"> sim  </label>
+ <p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="pret_investir" id="i_p_inv_n" onclick="f_pret_invest(2)" VALUE="não"><label for="i_p_inv_n"> não</label>
+<br>
+<p>
+<br>
+<legend>9.5.Se sim em qual área:</legend>
+<p id="espaçamento">  
+<INPUT TYPE="RADIO" NAME="ssq_area" id="i_ssqa_equip" onclick="f_ssqa(1)" VALUE="equipamentos"><label for="i_ssqa_equip"> equipamentos   </label>
+ <p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="ssq_area" id="i_ssqa_ad_amp" onclick="f_ssqa(2)" VALUE="adequação /ampliação estrutura"><label for="i_ssqa_ad_amp"> adequação /ampliação estrutura</label>
+<p id="espaçamento"> 
+<INPUT TYPE="RADIO" NAME="ssq_area" id="i_ssqa_veic" onclick="f_ssqa(3)" VALUE=" veículos"><label for="i_ssqa_veic"> veículos    </label>
+ <p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="ssq_area" id="i_ssqa_mar_rot" onclick="f_ssqa(4)" VALUE=" Marketing /rotulagem"><label for="i_ssqa_mar_rot"> Marketing /rotulagem</label>
+<p id="espaçamento"> 
+<INPUT TYPE="RADIO" NAME="ssq_area" id="i_ssqa_a_mer" onclick="f_ssqa(5)" VALUE="ampliação de mercado"><label for="i_ssqa_a_mer"> ampliação de mercado</label>
+<p id="espaçamento"> 
+outros <input type="text" name="outros_ssqa" id="i_ssqa_o" size "100" placeholder="SUA RESPOSTA" />
+<br>
+<p>
+<br>
+<h2>10.Demandas /necessidades</h2>   (igual ao questionário)
+<br>
+<p>
+<br>
+<legend>10.1.Capacitação /cursos e treinamentos  </legend>
+<p id="espaçamento">
+ <INPUT TYPE="RADIO" NAME="capt_cur_trein" id="i_cap_c_tre_s" onclick="f_Cap_cur_trei(1)" VALUE="sim"><label for="i_cap_c_tre_s">sim  </label>
+ <p id="espaçamento">
+ <INPUT TYPE="RADIO" NAME="capt_cur_trein" id="i_cap_c_tre_n" onclick="f_Cap_cur_trei(2)" VALUE="não"><label for="i_cap_c_tre_n">não  </label>
+ <p id="espaçamento">
+ Tipos/área: <input type="text" name="capt_cur_trein_t_a" id="i_cap_c_tre_ta" size "200" placeholder="SUA RESPOSTA" />
+<br>
+<p>
+<br>
+<legend>10.2.Assistência técnica </legend>
+ <p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="assis_tecnica" id="i_assi_t_s" onclick="f_assis_tec(1)" VALUE=" sim"><label for="i_assi_t_s"> sim  </label>
+ <p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="assis_tecnica" id="i_assi_t_n" onclick="f_assis_tec(2)" VALUE="Não"><label for="i_assi_t_n"> Não.  </label>
+ <p id="espaçamento">
+Em que áreas:<input type="text" name="assis_tecnic_qa" id="i_assi_t_eqa" size "100" placeholder="SUA RESPOSTA" />
+<br>
+<p>
+<br>
+<legend>10.3.Projeto de adequação /ampliação? Equipamentos  </legend>  
+ <p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="proj_adeq" id="i_paaqe_s" onclick="f_P_a_ampli_Equip(1)" VALUE="sim"><label for="i_paaqe_s"> sim  </label>
+ <p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="proj_adeq" id="i_paaqe_n" onclick="f_P_a_ampli_Equip(2)" VALUE="Não"><label for="i_paaqe_n"> Não </label>
+<br>
+<p>
+<br>
+<legend>10.4.Comercialização:</legend>
+<p id="espaçamento">    
+<INPUT TYPE="RADIO" NAME="Comercializacao" id="i_c_inser" onclick="f_Comerc(1)" VALUE="inserção"><label for="i_c_inser"> inserção   </label>
+ <p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="Comercializacao" id="i_c_amp_merc" onclick="f_Comerc(2)" VALUE="ampliação de mercado"><label for="i_c_amp_merc"> ampliação de mercado</label>
+<p id="espaçamento"> 
+ <h2>marketing</h2>
+<br>
+<p>
+<br>
+<legend>10.5.Crédito :  </legend> 
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="Credito" id="i_c_cap_giro" onclick="f_Cred(1)" VALUE="capital de giro"><label for="i_c_cap_giro"> capital de giro</label>
+<p id="espaçamento"> 
+<INPUT TYPE="RADIO" NAME="Credito" id="i_c_inves" onclick="f_Cred(2)" VALUE="investimento"><label for="i_c_inves"> investimento</label>
+ <p id="espaçamento">
+ Valor médio <input type="text" name="val_med_credito" id="i_c_vm" size "100" placeholder="SUA RESPOSTA" />
+<br>
+<p>
+<br>
+<legend>10.6.Apontar outras demandas/ necessidades urgentes ao empreendimento:</legend>
+a)<input type="text" name="outra_demanda_A" id="i_aodnue_A" size "100" placeholder="SUA RESPOSTA" />
+<br>
+<p id="espaçamento">
+b)<input type="text" name="outra_demanda_B" id="i_aodnue_B" size "100" placeholder="SUA RESPOSTA" />
+<div id="perguntas">
+<form>
+
+</form>
+<p>
+</div>
+
+</div>
+<a href="comercialização_regulamentação.html">proximo</a>
+ <button id="btnAdicionar" onclick="investimento()">Adicionar item</button>
+     <button id="btnLimpar" onclick="limpar()">Remover todos</button>
+</section>
+</div>
+</body>
+</html>

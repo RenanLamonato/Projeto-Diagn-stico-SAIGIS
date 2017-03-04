@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"/>
+<title> Diagnóstico das Agroindústrias Rurais Sudoeste/PR </title>
+<link rel="stylesheet" type="text/css" href="_estilo/estilofinal.css"/>
+<script language="javascript" src="_javascript/estorage1.js"></script>
+</head>
+<body>
+<div id="geral">
+<nav id="menu">
+<div id="interface">
+
+<header id="cabecalho">
+<div id="imagens">
+<figure class="foto-legenda">
+<img id="unicafes" src="imagens/logomarca-unicafes.png"/>
+<img id="utfpr" src="imagens/image_preview.png"/>
+<img id="embrapa" src="imagens/Embrapa_-_Marca.png"/>
+<img id="Emater" src="imagens/EMATER.png"/>
+
+
+<figcaption>
+<p>colaboradores</p>
+</figcaption>
+</figure>
+<section id="corpo">
+</div>
+ <h1>  Diagnóstico das Agroindústrias Rurais Sudoeste/PR</h1>
+</div>
+<div id="corpo">
+</header>
+<h2>DADOS - AMBIENTAL</h2>
+<div id="perguntas">
+<p id="espaçamento">
+
+
+<legend>a estrutura da empresa se enquadra na legislação ambiental?</legend>
+<p>
+<INPUT TYPE="RADIO" NAME="SE_ENQUADRA_NA_LEGISLAÇÃO_AMBIENTAL" onclick="f_e_E_EN_LEG_AMB(1)" id="I_ELA_atende" VALUE="ATENDE"><label for="I_ELA_atende"> atende</label>
+<p>
+<INPUT TYPE="RADIO" NAME="SE_ENQUADRA_NA_LEGISLAÇÃO_AMBIENTAL" onclick="f_e_E_EN_LEG_AMB(2)" id="I_ELA_ate_parcialmente" VALUE="ATENDE_PARCIALMENTE"><label for="I_ELA_ate_parcialmente"> atende parcialmente</label>
+<p>
+<INPUT TYPE="RADIO" NAME="SE_ENQUADRA_NA_LEGISLAÇÃO_AMBIENTAL" onclick="f_e_E_EN_LEG_AMB(3)" id="I_ELA_n_atende" VALUE="NAO_ATENDE"><label for="I_ELA_n_atende"> não atende</label>
+<p>
+<INPUT TYPE="RADIO" NAME="SE_ENQUADRA_NA_LEGISLAÇÃO_AMBIENTAL" onclick="f_e_E_EN_LEG_AMB(4)" id="I_ELA_n_sabe" VALUE="NAO_SABE"><label for="I_ELA_n_sabe"> não sabe</label>
+
+<br>
+<p>
+<br>
+
+<legend>qual é a fonte de água?</legend>
+<P>
+<INPUT TYPE="checkbox" NAME="QUAL_E_A_FONTE_DE_AGUA" onclick="f_qfa_0()" id="I_QFA_poco_artesiano" VALUE="POÇO_ARTESIANO"><label for="I_QFA_poco_artesiano"> poço artesiano </label>
+<p id="espaçamento">
+<INPUT TYPE="checkbox" NAME="QUAL_E_A_FONTE_DE_AGUA" onclick="f_qfa_1()" id="I_QFA_vertente" VALUE="VERTENTE"><label for="I_QFA_vertente"> vertente </label>
+<p id="espaçamento">
+<INPUT TYPE="checkbox" NAME="QUAL_E_A_FONTE_DE_AGUA" onclick="f_qfa_2()" id="I_QFA_a_r_publica" VALUE="AGUA_REDE_PUBLICA"><label for="I_QFA_a_r_publica"> água da rede publica </label>
+<p id="espaçamento">
+<INPUT TYPE="checkbox" NAME="QUAL_E_A_FONTE_DE_AGUA" onclick="f_qfa_3()" id="I_QFA_poco_comum" VALUE="POÇO_COMUM"><label for="I_QFA_poco_comum"> poço comum </label>
+<p id="espaçamento">
+<INPUT TYPE="checkbox" NAME="QUAL_E_A_FONTE_DE_AGUA" onclick="f_qfa_4()" id="I_QFA_nascente" VALUE="NASCENTE"><label for="I_QFA_nascente"> nascente </label>
+<p id="espaçamento">
+<INPUT TYPE="checkbox" NAME="QUAL_E_A_FONTE_DE_AGUA" onclick="f_qfa_5()" id="I_QFA_outro" VALUE="OUTRO"><label for="I_QFA_outro"> outro </label>
+<p id="espaçamento">
+<br>
+<p>
+<br>
+<legend>para que e utilizada a água?</legend>
+<p>
+<INPUT TYPE="checkbox" NAME="PARA_QUE_E_UTILIZADA_A_AGUA" onclick="F_PQUA_1()" id="I_PQUA_MAT_PRIMA" VALUE="MATÉRIA PRIMA"><label for="I_PQUA_MAT_PRIMA"> matéria prima </label>
+<p id="espaçamento">
+<INPUT TYPE="checkbox" NAME="PARA_QUE_E_UTILIZADA_A_AGUA" onclick="F_PQUA_2()" id="I_PQUA_BENEF_PRODUTO" VALUE=" BENEFICIAMENTO DOS PRODUTOS"><label for="I_PQUA_BENEF_PRODUTO"> beneficiamento dos produtos </label>
+<p id="espaçamento">
+<INPUT TYPE="checkbox" NAME="PARA_QUE_E_UTILIZADA_A_AGUA" onclick="F_PQUA_3()" id="I_PQUA_LIM_INSTACOES" VALUE="LIMPEZA DAS INSTALAÇÕES"><label for="I_PQUA_LIM_INSTACOES"> limpeza das instalações </label>
+<p id="espaçamento">
+<br>
+<p>
+<br>
+<table>
+<legend>quais são as fraçoes do uso em cada um dos assinalado?</legend>
+<tr><td class="esquerdamercado"> matéria prima </td> <form>
+<td class="esquerdamercado"><INPUT TYPE="RADIO" NAME="MATERIA_PRIMA" id="i_MP_0_25" onclick="f_t_a_u_mat_prima(1)" VALUE="0_A_25"><label for="i_MP_0_25">0% a 25%</label></td>
+<td class="esquerdamercado"><INPUT TYPE="RADIO" NAME="MATERIA_PRIMA" id="i_MP_26_50" onclick="f_t_a_u_mat_prima(2)" VALUE="26_A_50"><label for="i_MP_26_50">26% a 50%</label></td>
+<td class="esquerdamercado"><INPUT TYPE="RADIO" NAME="MATERIA_PRIMA" id="i_MP_51_75" onclick="f_t_a_u_mat_prima(3)" VALUE="51_A_75"><label for="i_MP_51_75">51% a 75%</label></td>
+<td class="esquerdamercado"><INPUT TYPE="RADIO" NAME="MATERIA_PRIMA" id="i_MP_76_100" onclick="f_t_a_u_mat_prima(4)" VALUE="76_A_100"><label for="i_MP_76_100">76% a 100%</label></td>
+</form> </tr>
+<tr><td class="direitamercado"> beneficiamento dos produtos </td> <form>
+<td class="direitamercado"><INPUT TYPE="RADIO" NAME="BENEFICIAMENTO_DOS_PRODUTOS" id="i_BP_0_25" onclick="f_t_BENE_PROD(1)" VALUE="0_A_25"><label for="i_BP_0_25">0% a 25%</label></td>
+<td class="direitamercado"><INPUT TYPE="RADIO" NAME="BENEFICIAMENTO_DOS_PRODUTOS" id="i_BP_26_50" onclick="f_t_BENE_PROD(2)" VALUE="26_A_50"><label for="i_BP_26_50">26% a 50%</label></td>
+<td class="direitamercado"><INPUT TYPE="RADIO" NAME="BENEFICIAMENTO_DOS_PRODUTOS" id="i_BP_51_75" onclick="f_t_BENE_PROD(3)" VALUE="51_A_75"><label for="i_BP_51_75">51% a 75%</label></td>
+<td class="direitamercado"><INPUT TYPE="RADIO" NAME="BENEFICIAMENTO_DOS_PRODUTOS" id="i_BP_76_100" onclick="f_t_BENE_PROD(4)" VALUE="76_A_100"><label for="i_BP_76_100">76% a 100%</label></td>
+</form> </tr>
+<tr><td class="esquerdamercado"> limpeza das instalações </td> <form>
+<td class="esquerdamercado"><INPUT TYPE="RADIO" NAME="LIMPEZA_DAS_INSTALACOES" id="i_LI_0_25" onclick="f_t_Limp_Insta(1)" VALUE="0_A_25"><label for="i_LI_0_25">0% a 25%</label></td>
+<td class="esquerdamercado"><INPUT TYPE="RADIO" NAME="LIMPEZA_DAS_INSTALACOES" id="i_LI_26_50" onclick="f_t_Limp_Insta(2)" VALUE="26_A_50"><label for="i_LI_26_50">26% a 50%</label></td>
+<td class="esquerdamercado"><INPUT TYPE="RADIO" NAME="LIMPEZA_DAS_INSTALACOES" id="i_LI_51_75" onclick="f_t_Limp_Insta(3)" VALUE="51_A_75"><label for="i_LI_51_75">51% a 75%</label></td>
+<td class="esquerdamercado"><INPUT TYPE="RADIO" NAME="LIMPEZA_DAS_INSTALACOES" id="i_LI_76_100" onclick="f_t_Limp_Insta(4)" VALUE="76_A_100"><label for="i_LI_76_100">76% a 100%</label></td>
+</form> </tr>
+</table>
+<br>
+<p>
+<br>
+<legend>é realizado algum tratamento da água antes da sua utilização?</legend>
+<p>
+<INPUT TYPE="RADIO" NAME="realiza_algum_tratamento_de_agua_antes_da_utilizacao" onclick="f_r_t_a_a_uti(1)" id="I_RATAAU_s" VALUE="SIM"><label for="I_RATAAU_s"> sim</label>
+<p>
+<INPUT TYPE="RADIO" NAME="realiza_algum_tratamento_de_agua_antes_da_utilizacao" onclick="f_r_t_a_a_uti(2)" id="I_RATAAU_n" VALUE="NAO"><label for="I_RATAAU_n"> não</label>
+<p>
+<br>
+<p>
+<br>
+<br><label for="I_DES"><legend>qual e o destino do esgoto sanitário?</legend><br><input type="text" name="destino_esgoto_sanitario" id="I_DES" size "50" maxlength="100" placeholder="Sua Resposta" />
+<br>
+<p>
+<br>
+<legend>na existencia de um sistema de tratamento qual a sua eficiencia?</legend>
+<p>
+<INPUT TYPE="RADIO" NAME="na_existencia_de_sistema_de_tratamento_qual_eficiencia" onclick="f_e_s_t_efic(1)" id="I_ESTQE_25" VALUE="0-A-25"><label for="I_ESTQE_25"> 0% A 25%</label>
+<p>
+<INPUT TYPE="RADIO" NAME="na_existencia_de_sistema_de_tratamento_qual_eficiencia" onclick="f_e_s_t_efic(2)" id="I_ESTQE_50" VALUE="26_A_50"><label for="I_ESTQE_50"> 26% A 50%</label>
+<p>
+<INPUT TYPE="RADIO" NAME="na_existencia_de_sistema_de_tratamento_qual_eficiencia" onclick="f_e_s_t_efic(3)" id="I_ESTQE_75" VALUE="51_A_75"><label for="I_ESTQE_75"> 51% A 75%</label>
+<p>
+<INPUT TYPE="RADIO" NAME="na_existencia_de_sistema_de_tratamento_qual_eficiencia" onclick="f_e_s_t_efic(4)" id="I_ESTQE_100" VALUE="76_A_100"><label for="I_ESTQE_100">76% A 100%</label>
+<br>
+<p>
+<br>
+<br><label for="I_RSGA"><legend>quais são os resíduos sólidos gerados na agroindústria</legend><br><input type="text" name="RESIDUOS_SOLIDOS_GERADOS_NA_AGROINDUSTRIA" id="I_RSGA" size "50" maxlength="100" placeholder="Sua Resposta" />
+<br>
+<p>
+<br>
+<br><label for="I_QDDRS"><legend>qual e o destino desses resíduos?</legend><br><input type="text" name="DESTINO_RESIDUOS_SOLIDOS" id="I_QDDRS" size "50" maxlength="100" placeholder="Sua Resposta" />
+<br>
+<p>
+<br>
+<br><label for="I_QSRLGA"><legend>quais são os resíduos líquidos gerados na agroindústria?</legend><br><input type="text" name="RESIDUOS_LIQUIDOS_GERADOS_NA_AGROINDUSTRIA" id="I_QSRLGA" size "50" maxlength="100" placeholder="Sua Resposta" />
+<br>
+<p>
+<br>
+<br><label for="I_QDDRL"><legend>qual e o destino desses resíduos?</legend><br><input type="text" name="DESTINO_RESIDUOS_LIQUIDOS" id="I_QDDRL" size "50" maxlength="100" placeholder="Sua Resposta" />
+<br>
+<p>
+<br>
+<br><label for="I_UACPBP"><legend>utiliza algum combustível no processo de benificiamento dos produtos?</legend><br><input type="text" name="UTILIZA_ALGUM_COMBUSTIVEL_PROCESSO_ BENIFICIAMENTO_DOS_PRODUTOS" id="I_UACPBP" size "50" maxlength="100" placeholder="Sua Resposta" />
+<br>
+<p>
+<br>
+<br><label for="I_OD_COMBUSTIVEL"><legend>qual a origem desses combustíveis?</legend><br><input type="text" name="ORIGEM_DESSES_COMBUSTIVEIS" id="I_OD_COMBUSTIVEL" size "50" maxlength="100" placeholder="Sua Resposta" />
+<br>
+<p>
+<br>
+<legend>realiza algum reaproveitamento do processo produtivo?</legend>
+<p>
+<INPUT TYPE="RADIO" NAME="REALIZA_ALGUM_REAPROVEITAMENTO_DO_PROCESSO_PRODUTIVO" onclick="f_r_r_p_prod(1)" id="I_RARPP_s" VALUE="SIM"><label for="I_RARPP_s">sim</label>
+<p>
+<INPUT TYPE="RADIO" NAME="REALIZA_ALGUM_REAPROVEITAMENTO_DO_PROCESSO_PRODUTIVO" onclick="f_r_r_p_prod(2)" id="I_RARPP_n" VALUE="NAO"><label for="I_RARPP_n">não</label>
+<p>
+<br>
+<p>
+<br>
+<br><label for="I_QSELES"><legend>quais são eles?</legend><br><input type="text" name="QUAIS_SAO_ELES" id="I_QSELES" size "50" maxlength="100" placeholder="Sua Resposta" />
+
+
+</div>
+</div>
+<a href="fichas.html">proximo</a>
+ <button id="btnAdicionar" onclick="ambiental()">Adicionar item</button>
+     <button id="btnLimpar" onclick="limpar()">Remover todos</button>
+</section>
+</div>
+</body>
+</html>
