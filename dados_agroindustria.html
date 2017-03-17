@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"/>
+<title> Diagnóstico das Agroindústrias Rurais Sudoeste/PR </title>
+<link rel="stylesheet" type="text/css" href="_estilo/estilofinal.css"/>
+<script language="javascript" src="_javascript/estorage1.js"></script>
+</head>
+
+<body>
+<div id="geral">
+<nav id="menu">
+<div id="interface">
+<header id="cabecalho">
+<div id="imagens">
+<figure class="foto-legenda">
+<img id="unicafes" src="_imagens/logomarca-unicafes.png"/>
+<img id="utfpr" src="_imagens/image_preview.png"/>
+<img id="embrapa" src="_imagens/Embrapa_-_Marca.png"/>
+<img id="Emater" src="_imagens/EMATER.png"/>
+<figcaption>
+<p>colaboradores</p>
+</figcaption>
+</figure>
+<section id="corpo">
+</div>
+ <h1>  Diagnóstico das Agroindústrias Rurais Sudoeste/PR</h1>
+</div>
+<div id="corpo">
+</header>
+<h2>DADOS - AGROINDUSTRIA</h2>
+
+<div id="perguntas">
+<form>
+
+<legend>3.1.</legend>
+<INPUT TYPE="RADIO" NAME="ind_col" onclick="f_3_1(1)" id="i_individual" VALUE="individual "><label for="i_individual">Individual</label>
+<INPUT TYPE="RADIO" NAME="ind_col" onclick="f_3_1(2)" id="i_coletiva" VALUE="coletiva "><label for="i_coletiva">coletiva</label>
+<br>
+<p>
+<br>
+<br><legend>3.2.Se individual: </legend>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="individual" onclick="f_3_2(1)" id="i_i_microempresa" VALUE="microempresa "><label for="i_i_microempresa"> microempresa </label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="individual" onclick="f_3_2(2)" id="i_i_CPF" VALUE=" CPF (sem empresa)"><label for="i_i_CPF">CPF (sem empresa)</label>
+<br>
+<p>
+<br>
+<br><legend>3.3.Se coletiva:</legend>
+<p id="espaçamento">
+ <INPUT TYPE="RADIO" NAME="coletiva" onclick="f_3_3(1)" id="i_c_associação" VALUE="associação "><label for="i_c_associação">associação</label>
+ <p id="espaçamento">
+ <INPUT TYPE="RADIO" NAME="coletiva" onclick="f_3_3(2)" id="i_c_Cooperativa" VALUE=" Cooperativa"><label for="i_c_Cooperativa">Cooperativa</label>
+ <p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="coletiva" onclick="f_3_3(3)" id="i_c_g_informal" VALUE="grupo informal "><label for="i_c_g_informal"> grupo informal </label>
+<br>
+<p>
+<br>
+<br><legend>3.4.Localização :</legend>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="Localizacao" onclick="f_3_4(1)" id="i_loc_rural" VALUE="rural "><label for="i_loc_rural"> rural</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="Localizacao" onclick="f_3_4(2)" id="i_loc_urbana" VALUE="urbana "><label for="i_loc_urbana"> urbana</label>
+<br>
+<p>
+<br>
+<br><legend>3.5.Instalação:</legend>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="Instalacao" onclick="f_3_5(1)" id="i_inst_propria" VALUE="própria "><label for="i_inst_propria"> própria</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="Instalacao" onclick="f_3_5(2)" id="i_inst_alugada" VALUE="alugada "><label for="i_inst_alugada"> alugada</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="Instalacao" onclick="f_3_5(3)" id="i_inst_outra" VALUE=" outra"><label for="i_inst_outra"> outra</label>
+<br>
+<p>
+<br>
+<br><legend>3.6.Área construída (m2 )</legend> 
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="area_construida" onclick="f_3_6(1)" id="i_ac_ate_50" VALUE="até 50 "><label for="i_ac_ate_50"> até 50</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="area_construida" onclick="f_3_6(2)" id="i_ac_50_80" VALUE="50 a 80 "><label for="i_ac_50_80"> 50 a 80</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="area_construida" onclick="f_3_6(3)" id="i_ac_80_150" VALUE="80 a 150 "><label for="i_ac_80_150"> 80 a 150</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="area_construida" onclick="f_3_6(4)" id="i_ac_150_250" VALUE=" 150 a 250 "><label for="i_ac_150_250"> 150 a 250 </label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="area_construida" onclick="f_3_6(5)" id="i_ac_maior_250" VALUE="maior que 250 "><label for="i_ac_maior_250"> maior que 250</label>
+<br>
+<p>
+<br>
+<h2>3.7.Banheiros/ vestiário</h2>
+<br>
+<p>
+<br>
+<br><legend>3.7.1.Número</legend><input type="text" name="numero_banheiro" id="i_n_banheiros" size "100" maxlength="100" placeholder="Sua Resposta"/>      
+<br>
+<p>
+<br>
+<br><legend>3.7.2.Estão adequados à inspeção /vigilância?</legend>
+<INPUT TYPE="RADIO" NAME="Estao_adequados_a_inspecao" onclick="f_3_7_2(1)" id="i_esiv_s" VALUE="sim "><label for="i_esiv_s"> sim</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="Estao_adequados_a_inspecao" onclick="f_3_7_2(2)" id="i_esiv_n" VALUE="não "><label for="i_esiv_n"> não </label>
+<br>
+<p>
+<br>
+<h2>3.8.Dependências: </h2>
+<br>
+<p>
+<br>
+<br><legend>3.8.1. Estrutura possui dependências exclusiva para produção?</legend>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="epdep_producao" onclick="f_3_8_1(1)" id="i_epdepp_s" VALUE="sim "><label for="i_epdepp_s"> sim </label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="epdep_producao" onclick="f_3_8_1(2)" id="i_epdepp_n" VALUE="Não"><label for="i_epdepp_n"> Não </label>
+<br>
+<p>
+<br>
+<h2>3.9.Mão-de-obra </h2>
+<br>
+<p>
+<br>
+<br><legend>3.9.1.Total de mão de obra /número pessoas envolvidas:</legend><input type="text" name="Tot_mão_de_obra" id="i_tmonp_envolvidas" size "100" maxlength="100" placeholder="Sua Resposta"/>      .
+<br>
+<p>
+<br>
+<br><legend>3.9.2.Exclusivamente familiar:</legend>
+ <INPUT TYPE="RADIO" NAME="Exclu_familiar" onclick="f_3_9_2(1)" id="i_exc_fami_s" VALUE="sim "><label for="i_exc_fami_s">sim</label>
+ <p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="Exclu_familiar" onclick="f_3_9_2(2)" id="i_exc_fami_n" VALUE="não "><label for="i_exc_fami_n"> não</label>
+<br>
+<p>
+<br>
+<br><legend>3.9.3.Número de homens</legend><input type="text" name="numero_home_fami" id="i_nh_fami" size "100" maxlength="100" placeholder="Sua Resposta"/>       
+<br>
+<p>
+<br>
+<br><legend>3.9.4.Faixa etária homens (anos):</legend> 
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="faixa_eta_h" onclick="f_3_9_4(1)" id="i_feh_fami_menor_16" VALUE="menor de 16 "><label for="i_feh_fami_menor_16"> menor de 16</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="faixa_eta_h" onclick="f_3_9_4(2)" id="i_feh_fami_16_25" VALUE="16_25 "><label for="i_feh_fami_16_25"> 16 a 25</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="faixa_eta_h" onclick="f_3_9_4(3)" id="i_feh_fami_25_50" VALUE="16 a 25 "><label for="i_feh_fami_25_50"> 25 a 50</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="faixa_eta_h" onclick="f_3_9_4(4)" id="i_feh_fami_50_60" VALUE="50 a 60 "><label for="i_feh_fami_50_60"> 50 a 60</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="faixa_eta_h" onclick="f_3_9_4(5)" id="i_feh_fami_maior_60" VALUE="maior 60 anos "><label for="i_feh_fami_maior_60"> maior 60 anos </label>
+<br>
+<p>
+<br>
+<br><legend>3.9.5.Numero de mulheres:</legend><input type="text" name="nume_mulh_fami" id="i_nm_fami" size "100" maxlength="100" placeholder="Sua Resposta"/>      
+<br>
+<p>
+<br>
+<br><legend>3.9.6.Faixa etária mulherea (anos) : </legend>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="faixa_eta_m" onclick="f_3_9_6(1)" id="i_fem_menor_16" VALUE=" menor de 16"><label for="i_fem_menor_16"> menor de 16</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="faixa_eta_m" onclick="f_3_9_6(2)" id="i_fem__16_25" VALUE=" 16 a 25"><label for="i_fem__16_25"> 16 a 25</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="faixa_eta_m" onclick="f_3_9_6(3)" id="i_fem_25_50" VALUE="25 a 50 "><label for="i_fem_25_50"> 25 a 50</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="faixa_eta_m" onclick="f_3_9_6(4)" id="i_fem_50_60" VALUE="50 a 60 "><label for="i_fem_50_60"> 50 a 60</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="faixa_eta_m" onclick="f_3_9_6(5)" id="i_fem_maior_60" VALUE="maior 60 anos "><label for="i_fem_maior_60"> maior 60 anos </label>
+<br>
+<p>
+<br>
+<br><legend>3.9.7.Renda média da família: (salário mínimo) </legend> 
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="renda_m_familia" onclick="f_3_9_7(1)" id="i_rmfsm_1_3" VALUE="1 a 3 "><label for="i_rmfsm_1_3">1 a 3</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="renda_m_familia" onclick="f_3_9_7(2)" id="i_rmfsm_3_5" VALUE="3 a 5 "><label for="i_rmfsm_3_5">3 a 5</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="renda_m_familia" onclick="f_3_9_7(3)" id="i_rmfsm_5_10" VALUE="5 a 10 "><label for="i_rmfsm_5_10">5 a 10</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="renda_m_familia" onclick="f_3_9_7(4)" id="i_rmfsm_maior_10" VALUE="Maior que 10 salários "><label for="i_rmfsm_maior_10">Maior que 10 salários</label>
+<br>
+<p>
+<br>
+<br><legend>3.9.8.Grau de importância da atividade na renda da propriedade e da família</legend> 
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="giaro_familia" onclick="f_3_9_8(1)" id="i_giarpf_alta" VALUE="alta "><label for="i_giarpf_alta">alta</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="giaro_familia" onclick="f_3_9_8(2)" id="i_giarpf_Media" VALUE="Média "><label for="i_giarpf_Media">Média</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="giaro_familia" onclick="f_3_9_8(3)"id="i_giarpf_baixa" VALUE="baixa "><label for="i_giarpf_baixa">baixa </label>
+<br>
+<p>
+<br>
+<br><legend>3.9.9.Mão-de-obra contratada</legend>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="mdo_contratada" onclick="f_3_9_9(1)" id="i_mdo_cont_s" VALUE="sim "><label for="i_mdo_cont_s"> sim</label>
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="mdo_contratada" onclick="f_3_9_9(2)" id="i_mdo_cont_n" VALUE=" não"><label for="i_mdo_cont_n"> não</label>
+<br>
+<p>
+<br>
+<br><legend>3.9.10.Número de homens</legend> <input type="text" name="nume_home_cont" id="i_ndh_cont" size "100" maxlength="100" placeholder="Sua Resposta"/>      
+<br>
+<p>
+<br>
+<br><legend>3.9.11.Numero de mulheres</legend> <input type="text" name="nume_mulh_cont" id="i_mulh_cont" size "100" maxlength="100" placeholder="Sua Resposta"/>      
+<br>
+<p>
+<br>
+<h2>3.10.Matéria- prima: </h2>
+<br>
+<p>
+<br>
+<br><legend>3.10.1.Procedência (%):</legend>
+<p id="espaçamento">
+ <INPUT TYPE="RADIO" NAME="Procedencia" onclick="f_3_10_1(1)" id="i_proc_prop" VALUE="própria "><label for="i_proc_prop">própria</label>
+ <p id="espaçamento">
+ <INPUT TYPE="RADIO" NAME="Procedencia" onclick="f_3_10_1(2)" id="i_proc_terc" VALUE="terceiros "><label for="i_proc_terc">terceiros</label>
+<br>
+<p>
+<br>
+<br><legend>3.10.2.Tipo/espécies:   </legend>
+<p> Espécie 1<input type="text" name="tip_espe1" id="i_te_esp_1" size "100" maxlength="100" placeholder="Sua Resposta"/>      <br>espécie 2<input type="text" name="tip_espe2" id="i_te_esp_2" size "100" maxlength="100" placeholder="Sua Resposta"/>   <br>espécie 3<input type="text" name="tip_espe3" id="i_te_esp_3" size "100" maxlength="100" placeholder="Sua Resposta"/>      
+<br>
+<p>
+<br>
+<br><legend>3.10.3.Quantidade utilizada por Mês  (kg/litro/..) : </legend>
+
+<p>Espécie 1 <input type="text" name="qu_mes1" id="i_qupm_esp_1" size "100" maxlength="100" placeholder="Sua Resposta"/>     <br>espécie 2<input type="text" name="qu_mes2" id="i_qupm_esp_2" size "100" maxlength="100" placeholder="Sua Resposta"/>     <br>espécie 3 <input type="text" name="qu_mes3" id="i_qupm_esp_3" size "100" maxlength="100" placeholder="Sua Resposta"/>      
+<br>
+<p>
+<br>
+<h2>3.11.Dados dos Produtos/produção: </h2>
+<br>
+<p>
+<br>
+<br><legend>Produto 1</legend>  
+<p>nome do produto:<input type="text" name="nom_p1" id="i_np_n_pro1" size "100" maxlength="100" placeholder="Sua Resposta"/> 
+<p> qtidade mês <input type="text" name="np_q_mes1" id="i_p1_q_mes" size "100" maxlength="100" placeholder="Sua Resposta"/>   <br>unidade (kg /litro..)<input type="text" name="np_unidade1" id="i_p1_unidade" size "100" maxlength="100" placeholder="Sua Resposta"/>       
+<br>preço de venda (R$/unidade)<input type="text" name="np_p_venda1" id="i_p1_p_venda" size "100" maxlength="100" placeholder="Sua Resposta"/>      
+<br>
+<p>
+<br>
+<br><legend>Produto 2</legend>  
+<p>nome do produto:<input type="text" name="nom_p2" id="i_np_n_pro2" size "100" maxlength="100" placeholder="Sua Resposta"/> 
+<p>qtidade mês <input type="text" name="np_q_mes2" id="i_p2_q_mes" size "100" maxlength="100" placeholder="Sua Resposta"/> <br>unidade (kg /litro..)<input type="text" name="np_unidade2" id="i_p2_unidade" size "100" maxlength="100" placeholder="Sua Resposta"/>      
+<br>preço de venda (R$/unidade)<input type="text" name="np_p_venda2" id="i_p2_p_venda" size "100" maxlength="100" placeholder="Sua Resposta"/>      
+<br>
+<p>
+<br>
+<br><legend>Produto 3</legend>  
+<p>nome do produto:<input type="text" name="nom_p3" id="i_np_n_pro3" size "100" maxlength="100" placeholder="Sua Resposta"/> 
+<p>qtidade mês <input type="text" name="np_q_mes3" id="i_p3_q_mes" size "100" maxlength="100" placeholder="Sua Resposta"/>   <br>unidade (kg /litro..)<input type="text" name="np_unidade3" id="i_p3_unidade" size "100" maxlength="100" placeholder="Sua Resposta"/>        
+<br>preço de venda (R$/unidade)<input type="text" name="np_p_venda3" id="i_p3_p_venda" size "100" maxlength="100" placeholder="Sua Resposta"/>      
+<br>
+<p>
+<br>
+<br><legend>Produto 4</legend>  
+nome do produto:<input type="text" name="nom_p4" id="i_np_n_pro4" size "100" maxlength="100" placeholder="Sua Resposta"/>    
+<p> qtidade mês<input type="text" name="np_q_mes4" id="i_p4_q_mes" size "100" maxlength="100" placeholder="Sua Resposta"/>    <br> unidade (kg /litro..)<input type="text" name="np_unidade_4" id="i_p4_unidade" size "100" maxlength="100" placeholder="Sua Resposta"/>        
+<br>preço de venda (R$/unidade)<input type="text" name="np_p_venda4" id="i_p4_p_venda" size "100" maxlength="100" placeholder="Sua Resposta"/>      
+</form>
+<p>
+</div>
+
+</div>
+ <button id="btnAdicionar" onclick="dados_agroindustria()">proximo</button>
+</section>
+</div>
+</body>
+</html>
