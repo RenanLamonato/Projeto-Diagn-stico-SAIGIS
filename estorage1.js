@@ -33,6 +33,208 @@ function cateagro(produto)
 
 /*fim identificação geral*/
 
+/*inicio dados da agroindustria*/
+var number_p2 = localStorage.getItem("contp2");
+	localStorage.setItem("cont_multiplap2",number_p2++);
+function dados_agroindustria()
+{
+var v_cont_p2;
+	v_cont_p2 = localStorage.getItem("contp2");
+	
+	localStorage.setItem("numero_banheiro["+v_cont_p2+"]",i_n_banheiros.value);
+ "numero_banheiro".text = i_n_banheiros.value = "";
+	localStorage.setItem("Total_de_mão_de_obra["+v_cont_p2+"]",i_tmonp_envolvidas.value);
+ "Total_de_mão_de_obra".text = i_tmonp_envolvidas.value = "";
+ 
+	localStorage.setItem("numero_homens_familiar["+v_cont_p2+"]",i_nh_fami.value);
+ "numero_homens_familiar".text = i_nh_fami.value = "";
+	localStorage.setItem("numero_mulheres_familiar["+v_cont_p2+"]",i_nm_fami.value);
+ "numero_mulheres_familiar".text = i_nm_fami.value = "";
+ 
+	localStorage.setItem("numero_homens_contratados["+v_cont_p2+"]",i_ndh_cont.value);
+ "numero_homens_contratados".text = i_ndh_cont.value = "";
+	localStorage.setItem("numero_mulheres_contratadas["+v_cont_p2+"]",i_mulh_cont.value);
+ "numero_mulheres_contratadas".text = i_mulh_cont.value = "";
+	
+	localStorage.setItem("tipo_Especie_1["+v_cont_p2+"]",i_te_esp_1.value);
+ "tipo_Especie_1".text = i_te_esp_1.value = "";
+	localStorage.setItem("tipo_Especie_2["+v_cont_p2+"]",i_te_esp_2.value);
+ "tipo_Especie_2".text = i_te_esp_2.value = "";
+	localStorage.setItem("tipo_Especie_3["+v_cont_p2+"]",i_te_esp_3.value);
+ "tipo_Especie_3".text = i_te_esp_3.value = "";
+ 
+	localStorage.setItem("Quantidade_utilizada_por_Mes_Especie_1["+v_cont_p2+"]",i_qupm_esp_1.value);
+ "Quantidade_utilizada_por_Mes_Especie_1".text = i_qupm_esp_1.value = "";
+	localStorage.setItem("Quantidade_utilizada_por_Mes_Especie_2["+v_cont_p2+"]",i_qupm_esp_2.value);
+ "Quantidade_utilizada_por_Mes_Especie_2".text = i_qupm_esp_2.value = "";
+	localStorage.setItem("Quantidade_utilizada_por_Mes_Especie_3["+v_cont_p2+"]",i_qupm_esp_3.value);
+ "Quantidade_utilizada_por_Mes_Especie_3".text = i_qupm_esp_3.value = "";
+ 
+	localStorage.setItem("Produto_1_nome_do_produto["+v_cont_p2+"]", i_np_n_pro1.value);
+ "Produto_1_nome_do_produto".text = i_np_n_pro1.value = "";
+	localStorage.setItem("Produto_1_qtidade_mes["+v_cont_p2+"]", i_p1_q_mes.value);
+ "Produto_1_qtidade_mes".text = i_p1_q_mes.value = "";
+	localStorage.setItem("Produto_1_unidade["+v_cont_p2+"]", i_p1_unidade.value);
+ "Produto_1_unidade".text = i_p1_unidade.value = "";
+	localStorage.setItem("Produto_1_preco_de_venda["+v_cont_p2+"]", i_p1_p_venda.value);
+ "Produto_1_preco_de_venda".text = i_p1_p_venda.value = "";
+	
+	localStorage.setItem("Produto_2_nome_do_produto["+v_cont_p2+"]", i_np_n_pro2.value);
+ "Produto_2_nome_do_produto".text = i_np_n_pro2.value = "";
+	localStorage.setItem("Produto_2_qtidade_mes["+v_cont_p2+"]", i_p2_q_mes.value);
+ "Produto_2_qtidade_mes".text = i_p2_q_mes.value = "";
+	localStorage.setItem("Produto_2_unidade["+v_cont_p2+"]", i_p2_unidade.value);
+ "Produto_2_unidade".text = i_p2_unidade.value = "";
+	localStorage.setItem("Produto_2_preco_de_venda["+v_cont_p2+"]", i_p2_p_venda.value);
+"Produto_2_preco_de_venda".text = i_p2_p_venda.value = "";
+	
+	localStorage.setItem("Produto_3_nome_do_produto["+v_cont_p2+"]", i_np_n_pro3.value);
+ "Produto_3_nome_do_produto".text = i_np_n_pro3.value = "";
+	localStorage.setItem("Produto_3_qtidade_mes["+v_cont_p2+"]", i_p3_q_mes.value);
+ "Produto_3_qtidade_mes".text = i_p3_q_mes.value = "";
+	localStorage.setItem("Produto_3_unidade["+v_cont_p2+"]", i_p3_unidade.value);
+ "Produto_3_unidade".text = i_p3_unidade.value = "";
+	localStorage.setItem("Produto_3_preco_de_venda["+v_cont_p2+"]", i_p3_p_venda.value);
+ "Produto_3_preco_de_venda".text = i_p3_p_venda.value = "";
+	
+	localStorage.setItem("Produto_4_nome_do_produto["+v_cont_p2+"]", i_np_n_pro4.value);
+ "Produto_4_nome_do_produto".text = i_np_n_pro4.value = "";	
+	localStorage.setItem("Produto_4_qtidade_mes["+v_cont_p2+"]", i_p4_q_mes.value);
+ "Produto_4_qtidade_mes".text = i_p4_q_mes.value = "";	
+	localStorage.setItem("Produto_4_unidade["+v_cont_p2+"]", i_p4_unidade.value);
+ "Produto_4_unidade".text = i_p4_unidade.value = "";	
+	localStorage.setItem("Produto_4_preco_de_venda["+v_cont_p2+"]", i_p4_p_venda.value);
+ "Produto_4_preco_de_venda".text = i_p4_p_venda.value = "";
+	
+	localStorage.setItem("contp2",number_p2++);
+		
+var v_cont_mult_p2;
+	v_cont_mult_p2 = localStorage.getItem("cont_multiplap2");
+	
+location.href="comercialização_regulamentação.html";
+	alert("arquivos salvos");
+	}
+
+function f_3_1(ff_3_1)
+{
+var	v_cont_mult_p2 = localStorage.getItem("cont_multiplap2");
+	if(ff_3_1 == 1){localStorage.setItem("indcole["+v_cont_mult_p2+"]",i_individual.value);}
+	if(ff_3_1 == 2){localStorage.setItem("indcole["+v_cont_mult_p2+"]",i_coletiva.value);}
+}
+
+function f_3_2(ff_3_2)
+{
+var	v_cont_mult_p2 = localStorage.getItem("cont_multiplap2");
+	if(ff_3_2 == 1){localStorage.setItem("se_individual["+v_cont_mult_p2+"]",i_i_microempresa.value);}
+	if(ff_3_2 == 2){localStorage.setItem("se_individual["+v_cont_mult_p2+"]",i_i_CPF.value);}
+}
+
+function f_3_3(ff_3_3)
+{
+var	v_cont_mult_p2 = localStorage.getItem("cont_multiplap2");
+	if(ff_3_3 == 1){localStorage.setItem("se_coletiva["+v_cont_mult_p2+"]",i_c_associação.value);}
+	if(ff_3_3 == 2){localStorage.setItem("se_coletiva["+v_cont_mult_p2+"]",i_c_Cooperativa.value);}
+	if(ff_3_3 == 3){localStorage.setItem("se_coletiva["+v_cont_mult_p2+"]",i_c_g_informal.value);}
+}
+
+function f_3_4(ff_3_4)
+{
+var	v_cont_mult_p2 = localStorage.getItem("cont_multiplap2");
+	if(ff_3_4 == 1){localStorage.setItem("Localizacao["+v_cont_mult_p2+"]",i_loc_rural.value);}
+	if(ff_3_4 == 2){localStorage.setItem("Localizacao["+v_cont_mult_p2+"]",i_loc_urbana.value);}
+}
+
+function f_3_5(ff_3_5)
+{
+var	v_cont_mult_p2 = localStorage.getItem("cont_multiplap2");
+	if(ff_3_5 == 1){localStorage.setItem("Instalacao["+v_cont_mult_p2+"]",i_inst_propria.value);}
+	if(ff_3_5 == 2){localStorage.setItem("Instalacao["+v_cont_mult_p2+"]",i_inst_alugada.value);}
+	if(ff_3_5 == 3){localStorage.setItem("Instalacao["+v_cont_mult_p2+"]",i_inst_outra.value);}
+}
+
+function f_3_6(ff_3_6)
+{
+var	v_cont_mult_p2 = localStorage.getItem("cont_multiplap2");
+	if(ff_3_6 == 1){localStorage.setItem("area_construida["+v_cont_mult_p2+"]",i_ac_ate_50.value);}
+	if(ff_3_6 == 2){localStorage.setItem("area_construida["+v_cont_mult_p2+"]",i_ac_50_80.value);}
+	if(ff_3_6 == 3){localStorage.setItem("area_construida["+v_cont_mult_p2+"]",i_ac_80_150.value);}
+	if(ff_3_6 == 4){localStorage.setItem("area_construida["+v_cont_mult_p2+"]",i_ac_150_250.value);}
+	if(ff_3_6 == 5){localStorage.setItem("area_construida["+v_cont_mult_p2+"]",i_ac_maior_250.value);}
+}
+
+function f_3_7_2(ff_3_7_2)
+{
+var	v_cont_mult_p2 = localStorage.getItem("cont_multiplap2");
+	if(ff_3_7_2 == 1){localStorage.setItem("Estao_adequados_a_inspecao["+v_cont_mult_p2+"]",i_esiv_s.value);}
+	if(ff_3_7_2 == 2){localStorage.setItem("Estao_adequados_a_inspecao["+v_cont_mult_p2+"]",i_esiv_n.value);}
+}
+
+function f_3_8_1(ff_3_8_1)
+{
+var	v_cont_mult_p2 = localStorage.getItem("cont_multiplap2");
+	if(ff_3_8_1 == 1){localStorage.setItem("possui_dependencias_exclusiva_para_producao["+v_cont_mult_p2+"]",i_epdepp_s.value);}
+	if(ff_3_8_1 == 2){localStorage.setItem("possui_dependencias_exclusiva_para_producao["+v_cont_mult_p2+"]",i_epdepp_n.value);}
+}
+
+function f_3_9_2(ff_3_9_2)
+{
+var	v_cont_mult_p2 = localStorage.getItem("cont_multiplap2");
+	if(ff_3_9_2 == 1){localStorage.setItem("Exclusiva_familiar["+v_cont_mult_p2+"]",i_exc_fami_s.value);}
+	if(ff_3_9_2 == 2){localStorage.setItem("Exclusiva_familiar["+v_cont_mult_p2+"]",i_exc_fami_n.value);}
+}
+
+function f_3_9_4(ff_3_9_4)
+{
+var	v_cont_mult_p2 = localStorage.getItem("cont_multiplap2");
+	if(ff_3_9_4 == 1){localStorage.setItem("faixa_etaria_homens["+v_cont_mult_p2+"]",i_feh_fami_menor_16.value);}
+	if(ff_3_9_4 == 2){localStorage.setItem("faixa_etaria_homens["+v_cont_mult_p2+"]",i_feh_fami_16_25.value);}
+	if(ff_3_9_4 == 3){localStorage.setItem("faixa_etaria_homens["+v_cont_mult_p2+"]",i_feh_fami_25_50.value);}
+	if(ff_3_9_4 == 4){localStorage.setItem("faixa_etaria_homens["+v_cont_mult_p2+"]",i_feh_fami_50_60.value);}
+	if(ff_3_9_4 == 5){localStorage.setItem("faixa_etaria_homens["+v_cont_mult_p2+"]",i_feh_fami_maior_60.value);}
+}
+
+function f_3_9_6(ff_3_9_6)
+{
+var	v_cont_mult_p2 = localStorage.getItem("cont_multiplap2");
+	if(ff_3_9_6 == 1){localStorage.setItem("faixa_etaria_mulheres["+v_cont_mult_p2+"]",i_fem_menor_16.value);}
+	if(ff_3_9_6 == 2){localStorage.setItem("faixa_etaria_mulheres["+v_cont_mult_p2+"]",i_fem__16_25.value);}
+	if(ff_3_9_6 == 3){localStorage.setItem("faixa_etaria_mulheres["+v_cont_mult_p2+"]",i_fem_25_50.value);}
+	if(ff_3_9_6 == 4){localStorage.setItem("faixa_etaria_mulheres["+v_cont_mult_p2+"]",i_fem_50_60.value);}
+	if(ff_3_9_6 == 5){localStorage.setItem("faixa_etaria_mulheres["+v_cont_mult_p2+"]",i_fem_maior_60.value);}
+}
+
+function f_3_9_7(ff_3_9_7)
+{
+var	v_cont_mult_p2 = localStorage.getItem("cont_multiplap2");
+	if(ff_3_9_7 == 1){localStorage.setItem("renda_media_familia["+v_cont_mult_p2+"]",i_rmfsm_1_3.value);}
+	if(ff_3_9_7 == 2){localStorage.setItem("renda_media_familia["+v_cont_mult_p2+"]",i_rmfsm_3_5.value);}
+	if(ff_3_9_7 == 3){localStorage.setItem("renda_media_familia["+v_cont_mult_p2+"]",i_rmfsm_5_10.value);}
+	if(ff_3_9_7 == 4){localStorage.setItem("renda_media_familia["+v_cont_mult_p2+"]",i_rmfsm_maior_10.value);}
+}
+
+function f_3_9_8(ff_3_9_8)
+{
+var	v_cont_mult_p2 = localStorage.getItem("cont_multiplap2");
+	if(ff_3_9_8 == 1){localStorage.setItem("Grau_importancia_ativ_renda_prop_e_da_familia["+v_cont_mult_p2+"]",i_giarpf_alta.value);}
+	if(ff_3_9_8 == 2){localStorage.setItem("Grau_importancia_ativ_renda_prop_e_da_familia["+v_cont_mult_p2+"]",i_giarpf_Media.value);}
+	if(ff_3_9_8 == 3){localStorage.setItem("Grau_importancia_ativ_renda_prop_e_da_familia["+v_cont_mult_p2+"]",i_giarpf_baixa.value);}
+}
+
+function f_3_9_9(ff_3_9_9)
+{
+var	v_cont_mult_p2 = localStorage.getItem("cont_multiplap2");
+	if(ff_3_9_9 == 1 ){localStorage.setItem("mao_de_obra_contratada["+v_cont_mult_p2+"]",i_mdo_cont_s.value);}
+	if(ff_3_9_9 == 2 ){localStorage.setItem("mao_de_obra_contratada["+v_cont_mult_p2+"]",i_mdo_cont_n.value);}
+}
+
+function f_3_10_1(ff_3_10_1)
+{
+var	v_cont_mult_p2 = localStorage.getItem("cont_multiplap2");
+	if(ff_3_10_1 == 1 ){localStorage.setItem("Procedencia["+v_cont_mult_p2+"]",i_proc_prop.value);}
+	if(ff_3_10_1 == 2 ){localStorage.setItem("Procedencia["+v_cont_mult_p2+"]",i_proc_terc.value);}
+}
+/*fim dados da agroindustria*/
+
 
 /* inicio investimento */
 function investimento()
