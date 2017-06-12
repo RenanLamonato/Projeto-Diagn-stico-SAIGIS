@@ -331,7 +331,6 @@ var fichap6_recuperada = (JSON.parse(localStorage.getItem("fichap6["+v_cont_p6+"
 var v_cont_mult_p6;
 	v_cont_mult_p6 = localStorage.getItem("cont_multiplap6");
 	
-location.href="fichas.html";
 	alert("arquivos salvos");
 }
 
