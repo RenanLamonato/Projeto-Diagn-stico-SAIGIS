@@ -1,0 +1,17 @@
+function doPost(e) {
+      
+  lSstring = e.postData.contents; // aqui pegamos os dados postados, em formato texto
+  var objetoLS = JSON.parse(lSstring); // passamos formato texto para tipo objeto - virou localStorage de novo
+  var planilha = SpreadsheetApp.getActiveSheet(); // pega a referência da planilha dona do script
+  var arrayLinha = []; // declara um array, que será a linha que adicionaremos à planilha
+  for (campo in objetoLS) { // percorremos cada elemento, que estamos chamando de campo, do objeto
+
+arrayLinha.push(objetoLS[campo]); // e empurramos ele para dentro do array que será a linha
+  }
+  planilha.appendRow(arrayLinha); // feito, adicionamos uma linha (do tipo array) à planilha
+
+}
+
+function doGet(e) {
+    return ContentService.createTextOutput('OK');                          // retorna um valor qualquer para satisfazer o protocolo
+}
