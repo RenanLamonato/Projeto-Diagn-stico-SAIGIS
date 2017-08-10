@@ -343,12 +343,27 @@ function f_9_1(ff_9_1)
 	if(ff_9_1 == 5){fichap6.Total_investido_na_agroindustria=i_tiagro_500_1.value;}
 	if(ff_9_1 == 6){fichap6.Total_investido_na_agroindustria=i_tiagro_mais_1.value;}
 	}
-
-function f_9_2(ff_9_2)
+function f_9_2_1(ff_9_2_1)
 {
-	if(ff_9_2 == 1){fichap6.Recursos=i_rec_pro.value;}	
-	if(ff_9_2 == 2){fichap6.Recursos=i_rec_t_fin.value;}
-	}
+	if(ff_9_2_1 == 1){fichap6.proprio=i_tab_p_0.value;}
+	if(ff_9_2_1 == 2){fichap6.proprio=i_tab_p_20.value;}
+	if(ff_9_2_1 == 3){fichap6.proprio=i_tab_p_30.value;}
+	if(ff_9_2_1 == 4){fichap6.proprio=i_tab_p_50.value;}
+	if(ff_9_2_1 == 5){fichap6.proprio=i_tab_p_70.value;}
+	if(ff_9_2_1 == 6){fichap6.proprio=i_tab_p_80.value;}
+	if(ff_9_2_1 == 7){fichap6.proprio=i_tab_p_100.value;}
+}
+
+function f_9_2_2(ff_9_2_2)
+{
+	if(ff_9_2_2 == 1){fichap6.terceiros_financiado=i_tab_tf_0.value;}
+	if(ff_9_2_2 == 2){fichap6.terceiros_financiado=i_tab_tf_20.value;}
+	if(ff_9_2_2 == 3){fichap6.terceiros_financiado=i_tab_tf_30.value;}
+	if(ff_9_2_2 == 4){fichap6.terceiros_financiado=i_tab_tf_50.value;}
+	if(ff_9_2_2 == 5){fichap6.terceiros_financiado=i_tab_tf_70.value;}
+	if(ff_9_2_2 == 6){fichap6.terceiros_financiado=i_tab_tf_80.value;}
+	if(ff_9_2_2 == 7){fichap6.terceiros_financiado=i_tab_tf_100.value;}
+}
 
 function f_9_4(ff_9_4)
 {
