@@ -870,7 +870,7 @@ function limpar()
 }
 
 
-/* fim funçoes gerais */
+
 function enviar(){
 	localStorage.removeItem("cont_multiplap1");
 	localStorage.removeItem("cont_multiplap2");
@@ -895,3 +895,4 @@ function enviar(){
 	};
 	
 
+/* fim funçoes gerais */
