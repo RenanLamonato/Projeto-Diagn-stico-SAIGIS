@@ -871,5 +871,27 @@ function limpar()
 
 
 /* fim funçoes gerais */
-
+function enviar(){
+	localStorage.removeItem("cont_multiplap1");
+	localStorage.removeItem("cont_multiplap2");
+	localStorage.removeItem("cont_multiplap3");
+	localStorage.removeItem("cont_multiplap4");
+	localStorage.removeItem("cont_multiplap5");
+	localStorage.removeItem("cont_multiplap6");
+	localStorage.removeItem("contp1");
+	localStorage.removeItem("contp2");
+	localStorage.removeItem("contp3");
+	localStorage.removeItem("contp5");
+	localStorage.removeItem("contp6");
+	localStorage.removeItem("contp4");
+  armazenamento_local_json = JSON.stringify(localStorage);  // passar o armazenamento local para formato json
+    var xhr = new XMLHttpRequest();                           // cria um objeto do tipo mensagem http://
+    xhr.open("POST", "https://script.google.com/macros/s/AKfycbyvPCrrhz4ft7fvwFLsqr9nbJU1zP8PbxCgXboeMfm1ibU_DFVv/exec", true);
+    xhr.setRequestHeader("Content-Type", "text/plain");          // configura a mensagem como POST=envia dados, e diz que a mensagem http://
+                                                              // será enviada para o endereço do script da planilha google, e ajeita o cabeçalho
+    xhr.send(armazenamento_local_json);                                             // envia a mensagem
+	localStorage.clear();
+	
+	};
+	
 
