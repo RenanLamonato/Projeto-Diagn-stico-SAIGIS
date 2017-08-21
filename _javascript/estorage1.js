@@ -477,7 +477,7 @@ function comercicializacao_regumalentacao()
 	fichap3.Venda_institucional_Escola=i_v_inst_escola.value;
 		"Venda_institucional_Escola".text = i_v_inst_escola.value = "";
 	
-	location.href="5_dados_ambiental.html";
+	location.href="4_dados_regulamentação.html";
 	alert("arquivos salvos");
 }
 
