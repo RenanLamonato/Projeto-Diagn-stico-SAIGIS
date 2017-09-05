@@ -75,7 +75,6 @@ var v_cont_p1;
         localStorage.setItem("fichap1["+v_cont_p1+"]", JSON.stringify(fichap1));
  
  	location.href="2_dados_agroindustria.html";
-	alert("arquivos salvos");
  
 var fichap1_recuperada = (JSON.parse(localStorage.getItem("fichap1")));
 
@@ -186,7 +185,6 @@ var v_cont_mult_p2;
 var fichap2_recuperada = (JSON.parse(localStorage.getItem("fichap2["+v_cont_p2+"]")));
 	
 	location.href="3_dados_comercialização.html";
-	alert("arquivos salvos");
 	}
 
 function f_3_1(ff_3_1)
@@ -330,6 +328,9 @@ var fichap6_recuperada = (JSON.parse(localStorage.getItem("fichap6["+v_cont_p6+"
 		
 var v_cont_mult_p6;
 	v_cont_mult_p6 = localStorage.getItem("cont_multiplap6");
+	
+	localStorage.setItem("Marcador["+v_cont_p6+"]","marcador_fim_da_ficha");
+	
 	location.href="fim.html";
 	alert("arquivos salvos");
 }
@@ -872,18 +873,7 @@ function limpar()
 
 
 function enviar(){
-	localStorage.removeItem("cont_multiplap1");
-	localStorage.removeItem("cont_multiplap2");
-	localStorage.removeItem("cont_multiplap3");
-	localStorage.removeItem("cont_multiplap4");
-	localStorage.removeItem("cont_multiplap5");
-	localStorage.removeItem("cont_multiplap6");
-	localStorage.removeItem("contp1");
-	localStorage.removeItem("contp2");
-	localStorage.removeItem("contp3");
-	localStorage.removeItem("contp5");
-	localStorage.removeItem("contp6");
-	localStorage.removeItem("contp4");
+
   armazenamento_local_json = JSON.stringify(localStorage);  // passar o armazenamento local para formato json
     var xhr = new XMLHttpRequest();                           // cria um objeto do tipo mensagem http://
     xhr.open("POST", "https://script.google.com/macros/s/AKfycbyvPCrrhz4ft7fvwFLsqr9nbJU1zP8PbxCgXboeMfm1ibU_DFVv/exec", true); // redefinir de acordo com o endereço cedido pela google
