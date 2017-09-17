@@ -75,7 +75,6 @@ var v_cont_p1;
         localStorage.setItem("fichap1["+v_cont_p1+"]", JSON.stringify(fichap1));
  
  	location.href="2_dados_agroindustria.html";
-	alert("arquivos salvos");
  
 var fichap1_recuperada = (JSON.parse(localStorage.getItem("fichap1")));
 
@@ -186,7 +185,6 @@ var v_cont_mult_p2;
 var fichap2_recuperada = (JSON.parse(localStorage.getItem("fichap2["+v_cont_p2+"]")));
 	
 	location.href="3_dados_comercialização.html";
-	alert("arquivos salvos");
 	}
 
 function f_3_1(ff_3_1)
@@ -331,10 +329,24 @@ var fichap6_recuperada = (JSON.parse(localStorage.getItem("fichap6["+v_cont_p6+"
 var v_cont_mult_p6;
 	v_cont_mult_p6 = localStorage.getItem("cont_multiplap6");
 	
-	localStorage.setItem("Marcador["+v_cont_p6+"]","marcador_fim_da_ficha");
+	f = {};
+	f[1] = (JSON.parse(localStorage.getItem("fichap1["+v_cont_p6+"]")));
+	f[2] = (JSON.parse(localStorage.getItem("fichap2["+v_cont_p6+"]")));
+	f[3] = (JSON.parse(localStorage.getItem("fichap3["+v_cont_p6+"]")));
+	f[4] = (JSON.parse(localStorage.getItem("fichap4["+v_cont_p6+"]")));
+	f[5] = (JSON.parse(localStorage.getItem("fichap5["+v_cont_p6+"]")));
+	f[6] = (JSON.parse(localStorage.getItem("fichap6["+v_cont_p6+"]")));
 	
-location.href="fichas.html";
-	alert("arquivos salvos");
+	localStorage.setItem("nf["+v_cont_p6+"]");
+	
+	localStorage.removeItem("fichap1["+v_cont_p6+"]");
+	localStorage.removeItem("fichap2["+v_cont_p6+"]");
+	localStorage.removeItem("fichap3["+v_cont_p6+"]");
+	localStorage.removeItem("fichap4["+v_cont_p6+"]");
+	localStorage.removeItem("fichap5["+v_cont_p6+"]");
+	localStorage.removeItem("fichap6["+v_cont_p6+"]");
+	alert("questionario finalizado");
+location.href="1_dados_identificação_geral.html";
 }
 
 function f_9_1(ff_9_1)
@@ -482,7 +494,6 @@ function comercicializacao_regumalentacao()
 		"Venda_institucional_Escola".text = i_v_inst_escola.value = "";
 	
 	location.href="4_dados_regulamentação.html";
-	alert("arquivos salvos");
 }
 
 function f_4_1(ff_4_1)
@@ -571,7 +582,6 @@ var v_cont_mult_p4;
     var fichap4_recuperada = (JSON.parse(localStorage.getItem("fichap4["+v_cont_p4+"]")));
 	
 location.href="5_dados_ambiental.html";
-	alert("arquivos salvos");
 	
 }
 function f_6_1(ff_6_1)
@@ -731,7 +741,6 @@ var v_cont_mult_p5;
 	v_cont_mult_p5 = localStorage.getItem("cont_multiplap5");
 	
 	location.href="6_dados_investimento.html";
-	alert("arquivos salvos");
 	
 }
 function f_8_4(ff_8_4)
