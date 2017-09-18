@@ -337,7 +337,7 @@ var v_cont_mult_p6;
 	f[5] = (JSON.parse(localStorage.getItem("fichap5["+v_cont_p6+"]")));
 	f[6] = (JSON.parse(localStorage.getItem("fichap6["+v_cont_p6+"]")));
 	
-	localStorage.setItem("nf["+v_cont_p6+"]");
+	localStorage.setItem("nf["+v_cont_p6+"]" , JSON.stringify(f));
 	
 	localStorage.removeItem("fichap1["+v_cont_p6+"]");
 	localStorage.removeItem("fichap2["+v_cont_p6+"]");
