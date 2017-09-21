@@ -1,26 +1,21 @@
 function doPost(e) {
       
-var planilha = SpreadsheerApp.getActiveSheet();
+var planilha = SpreadsheetApp.getActiveSheet();
 
 lSstring = e.postData.contents;
+  var nf = JSON.parse(lSstring);
 
-var nf = JSON.parce(lSstring);
-
-for(i in nf){
-      var arrayLinha = [];
-      
-      var f = JSON.parse(nf[i]);
-      for (j in f){
-            for (k in f[j]){
-                  arrayLinha.push(f[j][k]);
-            
-            }
+  for(i in nf) {
+    var arrayLinha = [];
+    
+    var f = JSON.parse(nf[i]);
+    for (j in f){
+      for (k in f[j]){
+        arrayLinha.push(f[j][k]);
       }
-
-      planilha.appendRow(arrayLinha);
+    }
+    planilha.appendRow(arrayLinha);
+  }
 }
-}
-
 function doGet(e) {
-    return ContentService.createTextOutput('OK');                          // retorna um valor qualquer para satisfazer o protocolo
-}
+    return ContentService.createTextOutput('OK');                         
