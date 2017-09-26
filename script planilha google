@@ -18,4 +18,5 @@ lSstring = e.postData.contents;
   }
 }
 function doGet(e) {
-    return ContentService.createTextOutput('OK');                         
+    return ContentService.createTextOutput('OK');           
+}
