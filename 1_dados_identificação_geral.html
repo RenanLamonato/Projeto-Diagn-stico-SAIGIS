@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"/>
+<title> Diagnóstico das Agroindústrias Rurais Sudoeste/PR </title>
+<link rel="stylesheet" type="text/css" href="_estilo/estilofinal.css"/>
+<script language="javascript" src="_javascript/estorage1.js"></script>
+
+</head>
+
+<body>
+<div id="geral">
+<nav id="menu">
+<div id="interface">
+<header id="cabecalho">
+<div id="imagens">
+<figure class="foto-legenda">
+<img id="unicafes" src="_imagens/logomarca-unicafes.png"/>
+<img id="utfpr" src="_imagens/image_preview.png"/>
+<img id="embrapa" src="_imagens/Embrapa_-_Marca.png"/>
+<img id="Emater" src="_imagens/EMATER.png"/>
+
+<figcaption>
+<p>colaboradores</p>
+</figcaption>
+</figure>
+<section id="corpo">
+</div>
+ <h1>  Diagnóstico das Agroindústrias Familiares das microrregiões de Francisco Beltrão e Dois Vizinhos </h1>
+ <img src="_imagens/SALVAR.png" onclick="enviar()" id="bt_SALVAR"/>
+</div>
+<div id="corpo">
+</header>
+<h2>identificação geral</h2>
+<form id="gform" method="POST" class="pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycbyvPCrrhz4ft7fvwFLsqr9nbJU1zP8PbxCgXboeMfm1ibU_DFVv/exec">
+
+<div id="perguntas">
+<form>
+
+<br><legend>1.Identificação:</legend><br><input type="text" name="identificação" id="i_dentificação" size "100" maxlength="100" placeholder="Mês,dia,ano"/> 
+<br>
+<p>
+<br>
+<br><legend>1.1.Nome da agroindustria:</legend><br><input type="text" name="nome_da_agroindustria" id="i_ig_n_ind" size "100" maxlength="100" placeholder="Sua Resposta"/> 
+<br>
+<p>
+<br>
+<legend>1.2.Categoria:</legend>
+<INPUT TYPE="RADIO" NAME="categoria" onclick="f_1_2(1)" id="iig_c_l_derivados" VALUE="leite e derivados"><label for="iig_c_l_derivados">  leite e derivados </label> 
+<p id="espaçamento">
+<INPUT TYPE="RADIO" NAME="categoria" onclick="f_1_2(2)" id="iig_c_f_hortalicas" VALUE="frutas e hortaliças"><label for="iig_c_f_hortalicas"> frutas /hortaliças</label> 
+<p id="espaçamento">
+ <INPUT TYPE="RADIO" NAME="categoria" onclick="f_1_2(3)" id="iig_c_c_derivados" VALUE="carne e derivados"><label for="iig_c_c_derivados">  carne e derivados</label>
+<p id="espaçamento">
+ <INPUT TYPE="RADIO" NAME="categoria" onclick="f_1_2(4)" id="iig_c_c_acucar" VALUE="cana açúcar"><label for="iig_c_c_acucar"> cana açúcar</label>
+<p id="espaçamento">
+ <INPUT TYPE="RADIO" NAME="categoria" onclick="f_1_2(5)" id="iig_c_o_derivados" VALUE="ovos e derivados"><label for="iig_c_o_derivados"> ovos e derivados</label>
+<p id="espaçamento">
+ <INPUT TYPE="RADIO" NAME="categoria" onclick="f_1_2(6)" id="iig_c_pescados" VALUE="pescado"><label for="iig_c_pescados"> pescado </label>
+<p id="espaçamento">
+ <INPUT TYPE="RADIO" NAME="categoria" onclick="f_1_2(7)" id="iig_c_mel" VALUE="mel"><label for="iig_c_mel"> mel </label>
+<p id="espaçamento">
+ <INPUT TYPE="RADIO" NAME="categoria" onclick="f_1_2(8)" id="iig_c_panificavao" VALUE="panificação"><label for="iig_c_panificavao">  panificação</label>
+<p id="espaçamento">
+ <INPUT TYPE="RADIO" NAME="categoria" onclick="f_1_2(9)" id="iig_c_outra" VALUE="outra"><label for="iig_c_outra">  outra</label>
+ <p id="espaçamento">
+ <INPUT TYPE="RADIO" NAME="categoria" onclick="f_1_2(10)" id="iig_c_sem_resposta" VALUE="1.2-sem resposta"><label for="iig_c_sem_resposta">  sem resposta</label>
+<br>
+<p>
+<br>
+<br><label for="i_ig_cidade"><legend>1.3.Localização/ cidade</legend><br><input type="text" name="localização_da_agroindustria" id="i_ig_cidade" size "100" maxlength="100" placeholder="Sua Resposta"/>
+<br>
+<p>
+<br>
+<br><label for="i-tempo_de_funcionamento"><legend>1.4.Tempo de funcionamento(anos)</legend><br><input type="text" name="Tempo_de_funcionamento" id="i_tempo_de_funcionamento" size "100" maxlength="100" placeholder="Sua Resposta"/> 
+<br>
+<p>
+<br>
+<h2>2.Dados do proprietário:</h2>
+<br>
+<p>
+<br>
+<br><legend>2.1.Nome:</legend><br><input type="text" name="nome" id="i_dp_nome" size "100" maxlength="100" placeholder="Sua Resposta"/> 
+<br>
+<p>
+<br>
+<br><legend>2.2.Endereço:</legend><br><input type="text" name="endereco" id="i_dp_endereco" size "100" maxlength="100" placeholder="Sua Resposta"/> 
+<br>
+<p>
+<br>
+<br><legend>2.3.Cidade:</legend><br><input type="text" name="cidade" id="i_dp_cidade" size "100" maxlength="100" placeholder="Sua Resposta"/> 
+<br>
+<p>
+<br>
+<br><legend>2.4.E-mail</legend><br><input type="text" name="email" id="i_dp_e_mail" size "100" maxlength="100" placeholder="Sua Resposta"/> 
+<br>
+<p>
+<br>
+<br><legend>2.5.Telefone :</legend><br><input type="text" name="telefone" id="i_dp_telefone" size "100" maxlength="100" placeholder="Sua Resposta"/>
+</form>
+<p>
+</div>
+
+</div>
+
+<img src="_imagens/proximo.png" onclick="identificacao_geral()" id="bt_proximo"/>
+
+</section>
+</div>
+</body>
+</html>
