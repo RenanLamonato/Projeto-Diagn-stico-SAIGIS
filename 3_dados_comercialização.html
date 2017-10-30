@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8"/>
+		<title> Diagnóstico das Agroindústrias Rurais Sudoeste/PR </title>
+		<link rel="stylesheet" type="text/css" href="_estilo/estilofinal.css"/>
+		<script language="javascript" src="_javascript/estorage1.js"></script>
+	</head>
+
+	<body>
+		<div id="geral">
+			<nav id="menu">
+			<div id="interface">
+				<header id="cabecalho">
+				<div id="imagens">
+					<figure class="foto-legenda">
+						<img id="unicafes" src="_imagens/logomarca-unicafes.png"/>
+						<img id="utfpr" src="_imagens/image_preview.png"/>
+						<img id="embrapa" src="_imagens/Embrapa_-_Marca.png"/>
+						<img id="Emater" src="_imagens/EMATER.png"/>
+						<figcaption>
+							<p>colaboradores</p>
+						</figcaption>
+						</figure>
+					<section id="corpo">
+				</div>
+				 <h1> Diagnóstico das Agroindústrias Familiares das microrregiões de Francisco Beltrão e Dois Vizinhos</h1>
+			</div>
+				<div id="corpo">
+				</header>
+				<h2>Comercialização / mercado</h2>
+
+				<div id="perguntas">
+					<form>
+						 <p id="espaçamento">
+						<br><legend>4.1.Faturamento bruto médio mensal (R$) da agroindustria</legend>
+							 <p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="fmnagroindustria" onclick="f_4_1(1)" id="i_fmm_agor_1_10" VALUE=" 1 mil a 10.000"><label for="i_fmm_agor_1_10"> 1 mil a 10.000 </label> 
+							 <p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="fmnagroindustria" onclick="f_4_1(2)" id="i_fmm_agor_10_50" VALUE="10.000 a 50.000"><label for="i_fmm_agor_10_50"> 10.000 a 50.000 </label> 
+							 <p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="fmnagroindustria" onclick="f_4_1(3)" id="i_fmm_agor_50_100" VALUE="50.000 a 100.0000"><label for="i_fmm_agor_50_100"> 50.000 a 100.0000 </label> 
+							 <p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="fmnagroindustria" onclick="f_4_1(4)" id="i_fmm_agor_100_500" VALUE="100.000 a 500.000"><label for="i_fmm_agor_100_500"> 100.000 a 500.000 </label> 
+							 <p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="fmnagroindustria" onclick="f_4_1(5)" id="i_fmm_agor_maior_500" VALUE="maior 500.000"><label for="i_fmm_agor_maior_500"> maior 500.000 </label>
+						<br>
+						<p>
+						<br>
+						<br><legend>4.2.Grau de prioridade da renda em relação a propriedade</legend>
+						 <p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="gprrpropriedade" onclick="f_4_2(1)" id="i_gprr_prop_alta" VALUE="alta"><label for="i_gprr_prop_alta"> alta </label>
+							 <p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="gprrpropriedade" onclick="f_4_2(2)" id="i_gprr_prop_media" VALUE="média"><label for="i_gprr_prop_media"> média </label> 
+							 <p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="gprrpropriedade" onclick="f_4_2(3)" id="i_gprr_prop_baixa" VALUE="Baixa"><label for="i_gprr_prop_baixa"> Baixa </label>
+						<br>
+						<p>
+						<br>
+						<br><legend>4.3.Local de venda:</legend>
+							 <p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="Local_de_venda" onclick="f_4_3(1)" id="i_lv_municipal" VALUE="municipal"><label for="i_lv_municipal"> municipal </label>
+							<p id="espaçamento"> 
+							 <INPUT TYPE="RADIO" NAME="Local_de_venda" onclick="f_4_3(2)" id="i_lv_regional" VALUE="regional"><label for="i_lv_regional"> regional </label> 
+							 <p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="Local_de_venda" onclick="f_4_3(3)" id="i_lv_estadual" VALUE="estadual"><label for="i_lv_estadual"> estadual </label> 
+							 <p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="Local_de_venda" onclick="f_4_3(4)" id="i_lv_nacional" VALUE="nacional"><label for="i_lv_nacional"> nacional </label>  
+						<br>
+						<p>
+						<br>
+						<br><legend>4.4.Forma de venda</legend>
+						responder as porcentagens totalizando 100%, colacar 0 nas opçoes não validas
+						 <br>
+						<p>
+						<br> 
+						<br><legend>Varejo/Supermercado:</legend><br><input type="text" name="Varejo_Supermercado" id="i_var_sup" size "100" maxlength="100" placeholder="Sua Resposta"/> 
+						<br>
+						<p>
+						<br>
+						<br><legend>Atacado:</legend><br><input type="text" name="Atacado" id="i_atacado" size "100" maxlength="100" placeholder="Sua Resposta"/> 
+						<br>
+						<p>
+						<br>
+						<br><legend>Venda direta/Feira</legend><br><input type="text" name="Venda_direta_Feira" id="i_v_d_feira" size "100" maxlength="100" placeholder="Sua Resposta"/> 
+						<br>
+						<p>
+						<br>
+						<br><legend>Representante comercial:</legend><br><input type="text" name="Representante_comercial" id="i_repr_comer" size "100" maxlength="100" placeholder="Sua Resposta"/> 
+						<br>
+						<p>
+						<br>
+						<br><legend>Venda institucional/Escola</legend><br><input type="text" name="Venda_institucional_Escola" id="i_v_inst_escola" size "100" maxlength="100" placeholder="Sua Resposta"/> 
+						<br>
+						<p>
+						<br>
+					</form>
+					<p>
+				</div>
+			</div>
+			  <img src="_imagens/proximo.png" onclick="comercicializacao_regumalentacao()" id="bt_proximo"/>
+			</section>
+		</div>
+	</body>
+</html>

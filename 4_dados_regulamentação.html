@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8"/>
+		<title> Diagnóstico das Agroindústrias Rurais Sudoeste/PR </title>
+		<link rel="stylesheet" type="text/css" href="_estilo/estilofinal.css"/>
+		<script language="javascript" src="_javascript/estorage1.js"></script>
+
+	</head>
+	<body>
+		<div id="geral">
+			<nav id="menu">
+			<div id="interface">
+				<header id="cabecalho">
+					<div id="imagens">
+						<figure class="foto-legenda">
+							<img id="unicafes" src="_imagens/logomarca-unicafes.png"/>
+							<img id="utfpr" src="_imagens/image_preview.png"/>
+							<img id="embrapa" src="_imagens/Embrapa_-_Marca.png"/>
+							<img id="Emater" src="_imagens/EMATER.png"/>
+							<figcaption>
+								<p>colaboradores</p>
+							</figcaption>
+						</figure>
+						<section id="corpo">
+					</div>
+					 <h1> Diagnóstico das Agroindústrias Familiares das microrregiões de Francisco Beltrão e Dois Vizinhos</h1>
+			</div>
+			<div id="corpo">
+				</header>
+				<h2>5.regularização</h2>
+
+				<div id="perguntas">
+					<form>
+						<br>
+						<p>
+						<br>
+						<br><legend>5.1.Regularização sanitária /inspeção sanitária (Se produto de origem animal): </legend>
+							 <p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="Regularização_sanitária_animal" onclick="f_5_1(1)" id="i_rsis_a_SIM" VALUE="inspeção SIM"><label for="i_rsis_a_SIM"> inspeção SIM </label>
+							 <p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="Regularização_sanitária_animal" onclick="f_5_1(2)" id="i_rsis_a_SIP" VALUE="inspeção SIP"><label for="i_rsis_a_SIP">inspeção SIP  </label>
+							 <p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="Regularização_sanitária_animal" onclick="f_5_1(3)" id="i_rsis_a_SIF" VALUE="Inspeção SIF "><label for="i_rsis_a_SIF"> Inspeção SIF </label> 
+							 <p id="espaçamento">
+							<INPUT TYPE="RADIO" NAME="Regularização_sanitária_animal" onclick="f_5_1(4)" id="i_rsis_a_SISBI" VALUE="inspeção SISBI"><label for="i_rsis_a_SISBI">inspeção SISBI</label>
+							 <p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="Regularização_sanitária_animal" onclick="f_5_1(5)" id="i_rsis_a_s_insp" VALUE="sem inspeção"><label for="i_rsis_a_s_insp">sem inspeção </label>
+						<br>
+						<p>
+						<br>
+						<br><legend>5.2.Regularização sanitária (se produto de origem vegetal):</legend>
+							<p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="Regularização_sanitária_vegetal" onclick="f_5_2(1)" id="i_rs_v_X" VALUE="possui anexo X"><label for="i_rs_v_X"> possui anexo X (vigilância sanitária municipal) </label>
+							 <p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="Regularização_sanitária_vegetal" onclick="f_5_2(2)" id="i_rs_n_vs" VALUE=" não possui visita vigilância sanitária"><label for="i_rs_n_vs"> não possui visita vigilância sanitária </label>
+						<br>
+						<p>
+						<br>
+						<br><legend>5.3.Rotulagem </legend>
+							 <p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="Rotulagem" onclick="f_5_3(1)" id="i_r_rot_adq" VALUE="rotulo adequado"><label for="i_r_rot_adq"> rotulo adequado </label>
+							 <p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="Rotulagem" onclick="f_5_3(2)" id="i_r_rot_nadq" VALUE="rotulo a adequar"><label for="i_r_rot_nadq"> rotulo a adequar </label>
+						<br>
+						<p>
+						<br>
+						<br><legend>5.4.Regularização ambiental (junto ao IAP)</legend>
+							 <p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="Regularização_ambiental" onclick="f_5_4(1)" id="i_ra_s" VALUE="sim"><label for="i_ra_s"> sim </label> 
+							 <p id="espaçamento">
+							 <INPUT TYPE="RADIO" NAME="Regularização_ambiental" onclick="f_5_4(2)" id="i_ra_n" VALUE="não"><label for="i_ra_n"> não </label> 
+						<h2>6.Tecnologia aplicada</h2>
+						<br>
+						<p>
+						<br>
+						<legend>6.2.Aponte os processos aplicados na transformação (de acordo com a categoria de agroinduatria):</legend> 
+						<br>
+							<INPUT TYPE="checkbox" NAME="processos_na_transformacao" onclick="f_vApa1()" id="i_a_p_a_t_past" VALUE="pasteurização"><label for="i_a_p_a_t_past">pasteurização  </label>
+							<p id="espaçamento">
+							<INPUT TYPE="checkbox" NAME="processos_na_transformacao" onclick="f_vApa2()" id="i_a_p_a_t_refri" VALUE="refrigeração"><label for="i_a_p_a_t_refri">refrigeração</label>
+							<p id="espaçamento">
+							 <INPUT TYPE="checkbox" NAME="processos_na_transformacao" onclick="f_vApa3()" id="i_a_p_a_t_cong" VALUE="congelamento"><label for="i_a_p_a_t_cong">congelamento</label>
+							 <p id="espaçamento">
+							<INPUT TYPE="checkbox" NAME="processos_na_transformacao" onclick="f_vApa4()" id="i_a_p_a_t_uflb" VALUE="uso de fermento lácteo ou bactérias"><label for="i_a_p_a_t_uflb">uso de fermento lácteo ou bactérias</label>
+							<p id="espaçamento">
+							<INPUT TYPE="checkbox" NAME="processos_na_transformacao" onclick="f_vApa5()" id="i_a_p_a_t_defu" VALUE="defumação"><label for="i_a_p_a_t_defu">defumação
+							<p id="espaçamento">
+							<INPUT TYPE="checkbox" NAME="processos_na_transformacao" onclick="f_vApa6()" id="i_a_p_a_t_emva" VALUE="embalagem á vácuo"><label for="i_a_p_a_t_emva">embalagem á vácuo</label>
+							<p id="espaçamento">
+							 outros<input type="text" name="processos_na_transformacao_outros" id="i_t_apat_out" size "100" maxlength="100" placeholder="Sua Resposta" />
+						<br>
+						<p>
+						<br>
+						<legend>6.3.Aponte os controles e acompanhamento de processos:</legend>  
+						<br>
+							<INPUT TYPE="checkbox" NAME="controle_processo" onclick="f_vAcap1()" id="i_a_c_a_p_camp" VALUE="controle e analises da matéria-prima"><label for="i_a_c_a_p_camp">controle e analises da matéria-prima    </label>
+							<p id="espaçamento">
+							<INPUT TYPE="checkbox" NAME="controle_processo" onclick="f_vAcap2()" id="i_a_c_a_p_BPF" VALUE="implantou BPF"><label for="i_a_c_a_p_BPF">implantou BPF(boas praticas de fabricação)   </label>
+							<p id="espaçamento">
+							<INPUT TYPE="checkbox" NAME="controle_processo" onclick="f_vAcap3()" id="i_a_c_a_p_reg" VALUE="faz registros"><label for="i_a_c_a_p_reg">faz registros em fichas de controle </label>
+							<p id="espaçamento">
+							<INPUT TYPE="checkbox" NAME="controle_processo" onclick="f_vAcap4()" id="i_a_c_a_p_v_pra" VALUE="vida de prateleira"><label for="i_a_c_a_p_v_pra">vida de prateleira - algum teste de vida de prateleira</label>
+							<p id="espaçamento">
+							<INPUT TYPE="checkbox" NAME="controle_processo" onclick="f_vAcap5()" id="i_a_c_a_p_con_mic" VALUE="controle microbiológico"><label for="i_a_c_a_p_con_mic">controle microbiológico(realiza analise de rotina) </label>
+							<INPUT TYPE="checkbox" NAME="controle_processo" onclick="f_vAcap5()" id="" VALUE=" "><label for="">sem controle </label>
+						<p id="espaçamento">
+						<br>
+						<p>
+						<br>
+						<legend>6.4. Tipos de equipamentos principias para o processo:</legend><br><input type="text" name="equipamentos_principias_para_processo" id="i_t_teppp" size "150" maxlength="150" placeholder="Sua Resposta" />
+						<br>
+						<p>
+						<br>
+						<h2>7.Assistência técnica</h2> 
+						<br>
+						<p>
+						<br>
+						<legend> 7.1.Possui assistência técnica frequente </legend> 
+						<br>
+							<INPUT TYPE="RADIO" NAME="assistência_técnica" onclick="f_7_1(1)" id="i_p_a_t_f_s" VALUE="sim"><label for="i_p_a_t_f_s">sim  </label>
+							<p id="espaçamento">
+							<INPUT TYPE="RADIO" NAME="assistência_técnica" onclick="f_7_1(2)" id="i_p_a_t_f_n" VALUE="não"><label for="i_p_a_t_f_n">não </label>
+						<br>
+						<p>
+						<br>
+						<legend> 7.2- Se sim, qual frequencia de atendimento? </legend> 
+						<br>
+							<INPUT TYPE="RADIO" NAME="se_sim_qual_frequencia_atendimento" onclick="f_7_2(1)" id="i_s_q_f_a_m" VALUE="mensal"><label for="i_s_q_f_a_m"> mensal </label>
+							<INPUT TYPE="RADIO" NAME="se_sim_qual_frequencia_atendimento" onclick="f_7_2(2)" id="i_s_q_f_a_3m" VALUE="cada_3_meses"><label for="i_s_q_f_a_3m"> a cada 3 meses </label>
+							<INPUT TYPE="RADIO" NAME="se_sim_qual_frequencia_atendimento" onclick="f_7_2(3)" id="i_s_q_f_a_6m" VALUE="cada_6_meses"><label for="i_s_q_f_a_6m"> a cada 6 meses </label>
+							<INPUT TYPE="RADIO" NAME="se_sim_qual_frequencia_atendimento" onclick="f_7_2(4)" id="i_s_q_f_a_a" VALUE="cada_ano"><label for="i_s_q_f_a_a"> a cada ano </label>
+						<br>
+						<p>
+						<br>
+						<legend> 7.3.Qual entidade/empresa</legend><br><input type="text" name="Qual entidade" id="i_t_q_ent" size "100" maxlength="100" placeholder="Sua Resposta" />
+					</form>
+					<p>
+				</div>
+
+			</div>
+			  <img src="_imagens/proximo.png" onclick="f_tecnologia_assistencia()" id="bt_proximo"/>
+			</section>
+		</div>
+	</body>
+</html>
