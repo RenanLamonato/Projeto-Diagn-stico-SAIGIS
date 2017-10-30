@@ -5,23 +5,7 @@
 <title> Diagnóstico das Agroindústrias Rurais Sudoeste/PR </title>
 <link rel="stylesheet" type="text/css" href="_estilo/estilofinal.css"/>
 <script language="javascript" src="_javascript/estorage1.js"></script>
-<script language="javascript">
-    // essa função recebe o nome "comun" ao checkboxes e a quantidade dos mesmos
-    function verificar( nome, quantidade ) {
-		saida = "Os checkboxes checados são:";
-		// itera baseado na quantidade de elementos
-		for ( i = 0; i < quantidade; i++ ) {
-		    // obtém cada elemento pelo id
-		    checkBox = document.getElementById( nome + ( i + 1 ) );
-		    // se o checkbox estiver marcado, adiciona mais uma linha na string de saida.
-		    if ( checkBox.checked ) {
-		        saida += "\n" + checkBox.value;
-		    }
-		}
-		// mostra a saída
-		fichap4.processos=saida.value;
-	}
-</script>
+
 </head>
 
 <body>
